@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="../resources/css/style.css">
+  <link rel="stylesheet" href="../resources/css/admin.css">
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <script src="../js/template.js"></script>
+  <script src="../js/apps.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header_wrap flex alc js">
+      <div class="title_txt flex alc">
+        <h2><span class="color">TEASER</span>-BUILDER</h2>
+        <h2 style="margin-left: 1rem; margin-right: 1rem;">|</h2>
+        <h2>티저빌더 페이지</h2>
+      </div>
+
+      <ul class="navi flex alc">
+        <li><a href="#">티저 페이지</a></li>
+        <li><a href="#">관리자</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="edit_area">
+    
+
+  <div class="build_top flex alc js brap">
+    <div class="build_cont_left">
+      <div class="cont_title flex alc js">
+        <h3>페이지 관리 <span>| 페이지를 생성하고 관리하세요.</span></h3>
+        <button class="btn" onclick="Page.newPage()">페이지추가</button>
+      </div>
+
+      <div class="after_line"></div>
+
+      <div class="build_info_box">
+        <div class="box_title">
+          <h3>페이지 목록</h3>
+
+          <div class="after_line"></div>
+        </div>
+
+        <div class="page_list">
+          <!-- <div class="page_item flex alc js" data-id="">
+            <p>페이지 이름: <span>asdad</span></p>
+            <p>페이지 고유코드: <span>ㅁㅇㅇㅁㅇㅁ</span></p>
+            <button class="btn page_modify" data-id="">페이지수정</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="build_cont_right">
+      <div class="cont_title flex alc js">
+        <h3>페이지 제작 <span>| 페이지에 레이아웃추가.</span></h3>
+        <button class="btn layout_view">레이아웃추가</button>
+      </div>
+      <div class="after_line"></div>
+      
+      <div class="build_info_box">
+        <div class="box_title">
+          <h3>템플릿 목록</h3>
+      
+          <div class="after_line"></div>
+        </div>
+      
+        <div class="temp_list">
+          <div class="temp_list_item hide">
+            <div class="layout_item flex alc">
+              <p><span class="bold">템플릿유형: </span> Visual</p>
+            </div>
+
+            <div class="sub_layout hide">
+              <div data-temp="visual_1">
+                <h4>Visual_1</h4>
+              </div>
+              <div data-temp="visual_2">
+                <h4>Visual_2</h4>
+              </div>
+            </div>
+          </div>
+          <div class="temp_list_item hide">
+            <div class="layout_item flex alc">
+              <p><span class="bold">템플릿유형: </span> Features</p>
+            </div>
+          
+            <div class="sub_layout hide">
+              <div data-temp="feature_1">
+                <h4>Features_1</h4>
+              </div>
+              <div data-temp="feature_2">
+                <h4>Features_2</h4>
+              </div>
+            </div>
+          </div>
+          <div class="temp_list_item hide">
+            <div class="layout_item flex alc">
+              <p><span class="bold">템플릿유형: </span> Gallery&Slider</p>
+            </div>
+          
+            <div class="sub_layout hide">
+              <div data-temp="gallery_1">
+                <h4>Gallery&Slider_1</h4>
+              </div>
+              <div data-temp="gallery_2">
+                <h4>Gallery&Slider_2</h4>
+              </div>
+            </div>
+          </div>
+          <div class="temp_list_item hide">
+            <div class="layout_item flex alc">
+              <p><span class="bold">템플릿유형: </span> Contacts</p>
+            </div>
+          
+            <div class="sub_layout hide">
+              <div data-temp="contact_1">
+                <h4>Contacts_1</h4>
+              </div>
+              <div data-temp="contact_2">
+                <h4>Contacts_2</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="build_prev brap">
+    <div class="cont_title flex alc js">
+      <h3>미리보기 <span>| 제작페이지 미리보기.</span></h3>
+    </div>
+
+    <div class="after_line"></div>
+
+    <div class="prev_box">
+      <div class="header_prev"></div>
+      <div class="visual_prev"></div>
+      <div class="feature_prev"></div>
+      <div class="gallery_prev"></div>
+      <div class="contact_prev"></div>
+      <div class="footer_prev"></div>
+    </div>
+  </div>
+
+  <div class="setting">
+    <div class="set_menu">
+      <div data-type="header">
+        <div class="btn md_open" data-type="logo_mod">로고수정</div>
+        <div class="btn md_open" data-type="menu_mod">메뉴 수정</div>
+      </div>
+      <div data-type="visual">
+        <div class="btn md_open" data-type="visual_img">비주얼이미지수정</div>
+        <div class="btn toggle" data-type="visual_title">타이틀 <span>감추기</span></div>
+        <div class="btn toggle" data-type="visual_ex">요약설명 <span>감추기</span></div>
+        <div class="btn toggle" data-type="visual_link">바로가기링크 <span>감추기</span></div>
+      </div>
+      <div data-type="feature">
+        <div class="btn md_open" data-type="feature_mod">문단타이틀 텍스트 변경</div>
+        <div class="btn toggle" data-type="feature_title">타이틀 <span>감추기</span></div>
+        <div class="btn toggle" data-type="feature_icon">아이콘 <span>감추기</span></div>
+        <div class="btn toggle" data-type="feature_txt">텍스트 <span>감추기</span></div>
+        <div class="btn toggle" data-type="feature_link">링크버튼 <span>감추기</span></div>
+      </div>
+      <div data-type="gallery">
+        <div class="btn md_open" data-type="gallery_mod">문단타이틀 텍스트 변경</div>
+        <div class="btn toggle" data-type="gallery_title">타이틀 <span>감추기</span></div>
+        <div class="btn toggle" data-type="gallery_sub">서브타이틀 <span>감추기</span></div>
+        <div class="btn toggle" data-type="gallery_txt">텍스트 <span>감추기</span></div>
+      </div>
+      <div data-type="contact">
+        <div class="btn md_open" data-type="contacts_mod">문단타이틀 텍스트 변경</div>
+        <div class="btn md_open" data-type="contacts_color">배경색 변경</div>
+        <div class="btn toggle" data-type="contacts_ad">주소 <span>감추기</span></div>
+        <div class="btn toggle" data-type="contacts_call">전화번호 <span>감추기</span></div>
+        <div class="btn toggle" data-type="contacts_email">이메일 <span>감추기</span></div>
+      </div>
+      <div data-type="footer">
+        <div class="md_open btn" data-type='footer_modify'>배경색수정</div>
+      </div>
+    </div>
+    <div class="set_btn">
+      설정
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="popup" id="page_add">
+      <div class="popup_title">
+        <div>
+          <h2>페이지이름 변경</h2>
+          <p>변경할 페이지 이름을 입력해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-mod="page_info" data-type="name">
+        <ul>
+          <li>페이지 이름</li>
+          <li><input type="text" class="input" name="page_name" value="신규 페이지" data-type="name"></li>
+        </ul>
+
+        <div class="pop_line"></div>
+
+        <button class="btn">변경</button>
+      </form>
+    </div>
+
+    <div class="popup" id="page_mod">
+      <div class="popup_title">
+        <div>
+          <h2>페이지이름 변경</h2>
+          <p>변경할 페이지 이름을 입력해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="name">
+        <ul>
+          <li>페이지 이름</li>
+          <li class="flex alc js">
+            <input type="text" class="input" name="page_name" data-type="name">
+            <button class="btn">변경</button>
+          </li>
+        </ul>
+      </form>
+
+      <form class="popup_content" data-type="code">
+        <ul>
+          <li>페이지 고유코드</li>
+          <li class="flex alc js">
+            <input type="text" class="input" name="code" data-type="code">
+            <button class="btn">변경</button>
+          </li>
+        </ul>
+      </form>
+      
+      <form class="popup_content" data-type="title">
+        <ul>
+          <li>Title</li>
+          <li class="flex alc js">
+            <input type="text" class="input" name="title" data-type="title">
+            <button class="btn">변경</button>
+          </li>
+        </ul>
+      </form>
+
+      <form class="popup_content" data-type="description">
+        <ul>
+          <li>Description</li>
+          <li class="flex alc js">
+            <input type="text" class="input" name="description" data-type="description">
+            <button class="btn">변경</button>
+          </li>
+        </ul>
+      </form>
+
+      <form class="popup_content" data-type="keyword">
+        <ul>
+          <li>Keyword</li>
+          <li class="flex alc js">
+            <input type="text" class="input" name="keyword" data-type="keyword">
+            <button class="btn">변경</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div class="popup" id="logo_mod">
+      <div class="popup_title">
+        <div>
+          <h2>페이지로고 변경</h2>
+          <p>변경할 페이지 로고를 선택해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+      
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="logo_upload">
+        <ul>
+          <li>이미지 업로드</li>
+          <li>
+            <input type="file" class="input" name="logo_upload">
+            <button class="btn">업로드</button>
+          </li>
+        </ul>
+      </form>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="logo_change">
+        <div class="logo_list">
+          <img src="../image/logo/logo.png" alt="logo" title="logo">
+          <img src="../image/logo/logo2.png" alt="logo" title="logo">
+          <img src="../image/logo/logo3.png" alt="logo" title="logo">
+        </div>
+      </form>
+    </div>
+
+    <div class="popup" id="menu_mod">
+      <div class="popup_title">
+        <div>
+          <h2>메뉴 변경</h2>
+          <p>변경할 페이지 이름을 입력해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="menu">
+        <ul class="flex alc js">
+          <li>
+            <input type="text" class="input" name="menu_1">
+          </li>
+          <li>
+            <select name="url_1" class="input">
+              <option value="">URL선택</option>
+            </select>
+          </li>
+        </ul>
+        <ul class="flex alc js">
+          <li>
+            <input type="text" class="input" name="menu_2">
+          </li>
+          <li>
+            <select name="url_2" class="input">
+              <option value="">URL선택</option>
+            </select>
+          </li>
+        </ul>
+        <ul class="flex alc js">
+          <li>
+            <input type="text" class="input" name="menu3">
+          </li>
+          <li>
+            <select name="url3" class="input">
+              <option value="">URL선택</option>
+            </select>
+          </li>
+        </ul>
+        <ul class="flex alc js">
+          <li>
+            <input type="text" class="input" name="menu_4">
+          </li>
+          <li>
+            <select name="url_4" class="input">
+              <option value="">URL선택</option>
+            </select>
+          </li>
+        </ul>
+        <ul class="flex alc js">
+          <li>
+            <input type="text" class="input" name="menu_5">
+          </li>
+          <li>
+            <select name="url_5" class="input">
+              <option value="">URL선택</option>
+            </select>
+          </li>
+        </ul>
+
+        <div class="pop_line"></div>
+
+        <button class="btn">변경</button>
+      </form>
+    </div>
+    
+    <div class="popup" id="visual_img">
+      <div class="popup_title">
+        <div>
+          <h2>비주얼이미지</h2>
+          <p>이미지 선택및 변경.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="visual_upload">
+        <ul>
+          <li>이미지</li>
+          <li>
+            <input type="file" class="input" name="visual_img">
+            <button class="btn">업로드</button>
+          </li>
+        </ul>
+      </form>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content">
+        <div class="visual_list" data-type="visual">
+          <img src="../image/visual/1.jpg" alt="visual" title="visual">
+          <img src="../image/visual/2.jpg" alt="visual" title="visual">
+          <img src="../image/visual/3.jpg" alt="visual" title="visual">
+          <img src="../image/visual/4.jpg" alt="visual" title="visual">
+          <img src="../image/visual/5.jpg" alt="visual" title="visual">
+          <img src="../image/visual/6.jpg" alt="visual" title="visual">
+          <img src="../image/visual/7.jpg" alt="visual" title="visual">
+        </div>
+      </form>
+    </div>
+    
+    <div class="popup" id="text_info_change" data-target="">
+      <div class="popup_title">
+        <div>
+          <h2>텍스트 변경</h2>
+          <p>속성과 텍스트를 변경가능합니다.</p >
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="">
+        <ul>
+          <li>텍스트</li>
+          <li><textarea class="input" name="text_cont" cols="30" rows="10" style="resize: none;"></textarea></li>
+          <button class="btn">적용</button>
+        </ul>
+
+        <div class="pop_line"></div>
+      </form>
+      
+      <form class="popup_content" data-type="">
+        <h3>폰트사이즈</h3>
+        
+        <div class="font_size_input">
+          <input type="text" class="input" name="fontSize">
+          <button class="btn">적용</button>
+        </div>
+        
+        <div class="pop_line"></div>
+      </form>
+
+      <h3>색상</h3>
+
+      <div class="text_color color_picker flex alc" data-target="">
+        <div data-color="#fff" style="background: #fff;"></div>
+        <div data-color="#000" style="background: #000;"></div>
+        <div data-color="rgb(255, 0, 0)" style="background: rgb(255, 0, 0);"></div>
+        <div data-color="rgb(255, 155, 0)" style="background: rgb(255, 115, 0);"></div>
+        <div data-color="#f8b504" style="background: #f8b504;"></div>
+        <div data-color="royalblue" style="background: royalblue"></div>
+        <div data-color="rgb(162, 0, 255)" style="background: rgb(162, 0, 255);"></div>
+        <div data-color="rgb(0, 255, 255)" style="background: rgb(0, 255, 255);"></div>
+      </div>
+    </div>
+    
+    <div class="popup" id="link_mod">
+      <div class="popup_title">
+        <div>
+          <h2>텍스트 변경</h2>
+          <p>변경할 텍스트를 입력해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="">
+        <ul>
+          <li>텍스트</li>
+          <li><input type="text" class="input" name="text"></li>
+        </ul>
+
+        <button class="btn">변경</button>
+      </form>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="">
+        <ul>
+          <li>URL</li>
+          <li><input type="text" class="input" name="url"></li>
+        </ul>
+
+        <button class="btn">변경</button>
+      </form>
+    </div>
+ 
+    <div class="popup" id="title_mod">
+      <div class="popup_title">
+        <div>
+          <h2>문단타이틀 텍스트 변경</h2>
+          <p>변경할 텍스트를 입력해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <form class="popup_content" data-type="">
+        <ul>
+          <li>문단타이틀 텍스트</li>
+          <li><input type="text" class="input" name="title"></li>
+        </ul>
+
+        <button class="btn">변경</button>
+      </form>
+    </div>
+  
+    <div class="popup" id="icon_mod">
+      <div class="popup_title">
+        <div>
+          <h2>아이콘 변경</h2>
+          <p>변경할 아이콘을 선택해주세요.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+    
+      <div class="pop_line"></div>
+    
+      <form class="popup_content icon_sel" data-type="">
+        <ul>
+          <li>아이콘 목록</li>
+        </ul>
+
+        <div class="icon_div">
+          <div class="icon_sel_div">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img src="../image/icon/icon.jpg" alt="">
+        </div>
+      </form>
+    </div>
+ 
+    <div class="popup" id="gallery_img">
+      <div class="popup_title">
+        <div>
+          <h2>갤러리이미지</h2>
+          <p>이미지 선택및 변경.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+    
+      <div class="pop_line"></div>
+    
+      <form class="popup_content" data-type="gallery_upload">
+        <ul>
+          <li>이미지</li>
+          <li>
+            <input type="file" class="input" name="gallery_img">
+            <button class="btn">업로드</button>
+          </li>
+        </ul>
+      </form>
+    
+      <div class="pop_line"></div>
+    
+      <form class="popup_content">
+        <div class="visual_list gal_img_list" data-type="gallery">
+          <img src="../image/gallery/1.jpg" alt="">
+          <img src="../image/gallery/2.jpg" alt="">
+          <img src="../image/gallery/3.jpg" alt="">
+          <img src="../image/gallery/4.jpg" alt="">
+          <img src="../image/gallery/5.jpg" alt="">
+          <img src="../image/gallery/6.png" alt="">
+          <img src="../image/gallery/7.png" alt="">
+          <img src="../image/gallery/8.jpg" alt="">
+          <img src="../image/gallery/9.png" alt="">
+          <img src="../image/gallery/10.jpg" alt="">
+          <img src="../image/gallery/11.jpg" alt="">
+          <img src="../image/gallery/12.jpg" alt="">
+          <img src="../image/gallery/13.jpg" alt="">
+          <img src="../image/gallery/14.jpg" alt="">
+          <img src="../image/gallery/15.jpg" alt="">
+          <img src="../image/gallery/16.jpg" alt="">
+          <img src="../image/gallery/17.jpg" alt="">
+          <img src="../image/gallery/18.jpg" alt="">
+          <img src="../image/gallery/19.jpg" alt="">
+          <img src="../image/gallery/20.jpg" alt="">
+          <img src="../image/gallery/21.jpg" alt="">
+          <img src="../image/gallery/22.jpg" alt="">
+          <img src="../image/gallery/23.jpg" alt="">
+          <img src="../image/gallery/24.jpg" alt="">
+          <img src="../image/gallery/25.jpg" alt="">
+          <img src="../image/gallery/26.jpg" alt="">
+          <img src="../image/gallery/27.jpg" alt="">
+          <img src="../image/gallery/28.jpg" alt="">
+          <img src="../image/gallery/29.jpg" alt="">
+          <img src="../image/gallery/30.jpg" alt="">
+          <img src="../image/gallery/31.jpg" alt="">
+          <img src="../image/gallery/32.jpg" alt="">
+          <img src="../image/gallery/33.jpg" alt="">
+          <img src="../image/gallery/34.jpg" alt="">
+          <img src="../image/gallery/35.png" alt="">
+        </div>
+      </form>
+    </div>
+    
+    <div class="popup" id="color_change">
+      <div class="popup_title">
+        <div>
+          <h2>배경색 변경</h2>
+          <p>배경색을 변경가능합니다.</p>
+        </div>
+        <div class="popup_close">
+          X
+        </div>
+      </div>
+
+      <div class="pop_line"></div>
+
+      <h3>색상</h3>
+    
+      <div class="text_color color_picker flex alc" data-target="">
+        <div data-color="#fff" style="background: #fff;"></div>
+        <div data-color="#000" style="background: #000;"></div>
+        <div data-color="rgb(255, 0, 0)" style="background: rgb(255, 0, 0);"></div>
+        <div data-color="rgb(255, 155, 0)" style="background: rgb(255, 115, 0);"></div>
+        <div data-color="#f8b504" style="background: #f8b504;"></div>
+        <div data-color="royalblue" style="background: royalblue"></div>
+        <div data-color="rgb(162, 0, 255)" style="background: rgb(162, 0, 255);"></div>
+        <div data-color="rgb(0, 255, 255)" style="background: rgb(0, 255, 255);"></div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+</html>

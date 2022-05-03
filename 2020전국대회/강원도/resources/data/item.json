@@ -1,0 +1,65 @@
+[{
+    "id": 1,
+    "product_name": "감자",
+    "price": "6,300"
+}, {
+    "id": 2,
+    "product_name": "고구마",
+    "price": "5,200"
+}, {
+    "id": 3,
+    "product_name": "고추",
+    "price": "4,700"
+}, {
+    "id": 4,
+    "product_name": "쌀",
+    "price": "15,000"
+}, {
+    "id": 5,
+    "product_name": "고추",
+    "price": "9,800"
+}, {
+    "id": 6,
+    "product_name": "소금",
+    "price": "500"
+}, {
+    "id": 7,
+    "product_name": "갈치",
+    "price": "1,500"
+}, {
+    "id": 8,
+    "product_name": "계란",
+    "price": "4,500"
+}, {
+    "id": 9,
+    "product_name": "옥수수",
+    "price": "3,500"
+}, {
+    "id": 10,
+    "product_name": "돼지고기 (100G)",
+    "price": "1,350"
+}, {
+    "id": 11,
+    "product_name": "김치",
+    "price": "9,900"
+}, {
+    "id": 12,
+    "product_name": "시금치",
+    "price": "1,000"
+}, {
+    "id": 13,
+    "product_name": "깻잎",
+    "price": "240"
+}, {
+    "id": 14,
+    "product_name": "오이",
+    "price": "350"
+}, {
+    "id": 15,
+    "product_name": "사과",
+    "price": "2,000"
+}, {
+    "id": 16,
+    "product_name": "쌈장",
+    "price": "4,000"
+}]
