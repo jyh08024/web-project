@@ -1,0 +1,598 @@
+/* 애니메이션 키프레임 */
+@keyframes visual {
+  0%, 10% { margin-left: 0; }
+  15%, 25% { margin-left: -20%; }
+  30%, 40% { margin-left: -40%; }
+  45%, 55% { margin-left: -60%; }
+  60%, 70% { margin-left: -80%; }
+  75%, 80% { margin-left: -100%; }
+  90%, 100% { margin-left: 0; }
+}
+
+.go_top_btn {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  background: #ffa500;
+  padding: 1rem;
+  bottom: 5%;
+  right: 3%;
+  z-index: 99;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Do";
+  font-size: 24px;
+  text-align: center;
+}
+
+/* 비주얼 영역 */
+.visual_title {
+  font-family: "Do";
+}
+
+.visual_title .big_t {
+  margin-top: 1rem;
+  font-size: 7.5rem;
+  position: relative;
+}
+
+.big_t::after {
+  content: "다함께떠나는대전빵지순례";
+  color: #ffa500;
+  font-size: 1rem;
+  position: absolute;
+  left: 65%;
+  top: 12%;
+}
+
+.visual_slide_top {
+  font-family: "Do";
+  display: flex;
+  justify-content: flex-end;
+}
+
+.visual_slide_top h3 {
+  position: relative;
+}
+
+.visual_slide_top h3::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 6px;
+  background: black;
+  top: 99%;
+  transform: translateY(-100%);
+  left: -20%;
+}
+
+.visual_img_rap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.visual_slide_rap {
+  width: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: visual 12s infinite;
+}
+
+.visual_slide_rap > div {
+  width: 310px;
+  height: 387px;
+  overflow: hidden;
+  background: #ffa500;
+}
+
+.visual_slide_rap div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .8;
+}
+
+/* ad섹션 */
+.ad_section img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* 오늘의 빵집 */
+.today_list > div {
+  margin-right: 15px;
+}
+
+.today_text_box .store_name {
+  font-family: "Do";
+  font-size: 1.7rem;
+}
+
+.today_text_box p {
+  font-size: .9rem;
+}
+
+.today_text_box .hashs {
+  opacity: .7;
+}
+
+.today_text_box a {
+  text-decoration: underline;
+}
+
+.today_item1 {
+  background: url('../image/18.png');
+  width: 27%;
+  height: 560px;
+  padding: 2rem;
+}
+
+.today_item1 .today_text_box {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 85%;
+}
+
+.today_item2 {
+  background: url('../image/11.png');
+  width: 43%;
+  padding: 2rem;
+  height: 560px;
+}
+
+.today_item2 .today_text_box {
+  width: 100%;
+  height: 100%;
+  background: rgba(265, 265, 265, .7);
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.today_item2 .today_text_box h1 {
+  font-size: 3.8rem;
+}
+
+.today_item3 {
+  background: url('../image/13.png');
+  width: 27%;
+  height: 560px;
+  padding: 2rem;
+}
+
+.today_item3 .today_text_box {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 85%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* 베스트 메뉴 */
+.menu_img {
+  width: 360px;
+  height: 560px;
+  position: relative;
+}
+
+.menu_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu_img::before {
+  content: "BEST";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ffa500;
+  border-radius: 999999999px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -3%;
+  left: -3%;
+}
+
+.best_menu_info {
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.best_menu_info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.best_menu_info h1 {
+  font-size: 2.5rem;
+}
+
+.best_menu_price {
+  padding: 1rem;
+  width: 130px;
+  height: 130px;
+  background: #ffa500;
+  border-radius: 999999999999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.before_price {
+  opacity: .7;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.before_price::after {
+  content: "";
+  width: 70%;
+  height: 1px;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  left: 15%;
+  top: 55%;
+}
+
+.after_price {
+  font-family: "HanS";
+}
+
+.btn_text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.best_menu_btn {
+  line-height: 30px;
+  margin-left: 8rem;
+}
+
+.best_menu_btn p {
+  opacity: .6;
+  font-size: .9rem;
+}
+
+.best_menu_btn div {
+  position: relative;
+}
+
+.best_menu_btn div::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 55%;
+  left: 105%;
+}
+
+.best_menu_btn div::after {
+  content: "";
+  width: 85px;
+  height: 85px;
+  background: #ffa500;
+  border-radius: 99999999999999999px;
+  position: absolute;
+  z-index: -1;
+  top: -70%;
+  left: 75%;
+}
+
+.menu_sub_img {
+  margin-top: 3rem;
+}
+
+.menu_sub_img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.menu_subs {
+  width: 650px;
+  height: 560px;
+}
+
+.menu_subs > div {
+  width: 100%;
+  height: 50%;
+  padding: 2rem;
+}
+
+.menu_subs > div:first-child {
+  background: url('../image/12.png');
+  margin-bottom: .5rem;
+}
+
+.menu_subs > div:nth-child(2) {
+  background: url('../image/14.png');
+}
+
+.menus .today_text_box {
+  background: #fff;
+  width: 280px;
+  height: 170px;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.menus .today_text_box a {
+  margin-top: 0;
+}
+
+/* 이벤트 */
+.event_main {
+  width: 50%;
+}
+
+.event_main_box {
+  width: 100%;
+  height: 600px;
+  padding: 2rem;
+}
+
+.event_main_box .today_text_box {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: rgba(265, 265, 265, .5);
+}
+
+.event_main_box .today_text_box {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.event_main_box .today_text_box h1 {
+  font-size: 3.5rem;
+  line-height: 30px;
+}
+
+.event_main_box .today_text_box span {
+  font-size: 2rem;
+}
+
+.sub_event_list {
+  width: 45%;
+  height: 600px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0rem 2rem;
+  margin-left: 30px;
+}
+
+.sub_event_box {
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, .2);
+  padding: 1rem;
+}
+
+.event_item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.event_item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 99999999999999px;
+  background: #ffa500;
+  position: absolute;
+  top: 10%;
+  left: -3.5%;
+}
+
+.event_left h2 {
+  margin-bottom: 1rem;
+}
+
+.event_label {
+  opacity: .7;
+}
+
+.event_right {
+  width: 280px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.event_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 리뷰 영역 */
+.review_item {
+  width: 49%;
+  border: 1px solid #ffa500;
+  padding: 1rem;
+  margin-right: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.review_item::before {
+  content: "실시간 급상승 리뷰";
+  background: #ffa500;
+  padding: .7rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.review_img {
+  width: 270px;
+  height: 250px;
+}
+
+.review_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review_right {
+  margin-left: 1.5rem;
+}
+
+.review_right i, .like_count {
+  font-size: 1.6rem;
+}
+
+.like_count {
+  font-family: "Do";
+}
+
+.review_right p {
+  margin-bottom: 1rem;
+}
+
+.review_info p {
+  margin-bottom: 0;
+  opacity: .8;
+}
+
+/* 반응형 */
+
+@media (max-width: 480px) {
+  @keyframes visual {
+    0%, 10% { margin-left: 0; }
+    15%, 20% { margin-left: -100%; }
+    25%, 30% { margin-left: -200%; }
+    35%, 40% { margin-left: -300%; }
+    45%, 50% { margin-left: -400%; }
+    55%, 60% { margin-left: -500%; }
+    65%, 70% { margin-left: -600%; }
+    75%, 80% { margin-left: -700%; }
+    85%, 90% { margin-left: -800%; }
+    95%, 98% { margin-left: -900%; }
+    99%, 100% { margin-left: 0; }
+  }
+
+  html, body {
+    font-size: 10px;
+  }
+
+  .wrap {
+    max-width: 460px;
+  }
+
+  .rap {
+    max-width: 320px;
+  }
+
+  .header_rap {
+    padding: 1rem 3rem;
+  }
+
+  .visual_title .big_t {
+    font-size: 7rem;
+  }
+
+  .big_t::after {
+    left: 77%;
+  }
+
+  .btn,.btn2 {
+    padding: .7rem 1rem;
+  }
+
+  .visual_slide_rap {
+    width: 1000%;
+  }
+
+  .visual_slide_rap > div {
+    width: 100%;
+  }
+
+  .today_list {
+    display: block;
+  }
+
+  .today_item1, .today_item2, .today_item3 {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .today_item1 .today_text_box {
+    display: block;
+  }
+
+  .menu_item1 > div {
+    display: block;
+  }
+
+  .menu_img {
+    width: 100%;
+  }
+
+  .best_menu_info {
+    margin-left: 0;
+  }
+
+  .menu_sub_img {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu_sub_img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .menus .today_text_box {
+    height: 110px;
+  }
+
+  .event_list {
+    display: block;
+  }
+
+  .event_main {
+    width: 100%;
+  }
+
+  .sub_event_list {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .event_right {
+    width: 150px;
+    height: 150px;
+  }
+
+  .review_list {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .review_item {
+    width: 100%;
+  }
+
+  .review_img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

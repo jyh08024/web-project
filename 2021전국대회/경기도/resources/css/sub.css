@@ -1,0 +1,580 @@
+.section {
+  margin-top: 3rem;
+}
+
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sub_header {
+  padding: 3rem 0rem;
+  color: white;
+}
+
+.sub_header .logo {
+  font-family: "HanS";
+  font-size: 1.5rem;
+  letter-spacing: -2px;
+}
+
+.intro_menu {
+  font-family: "HanS";
+  font-size: 1.2rem;
+}
+
+.sub_page_bottom {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  bottom: 5%;
+  left: 0;
+}
+
+.sub_page_btn {
+  padding: 1.2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.sub_page_bottom > div button {
+  margin-right: 1rem;
+}
+
+.sub_page_btn:hover {
+  background: #fff;
+  color: #ffa500;
+  transition: .4s;
+}
+
+.sub_section {
+  width: 100%;
+  height: 937px;
+  background: #ffa500;
+  background-size: 100%, 900px;
+}
+
+.sub_section1 {
+  background: url('../intro/1.jpg');
+  transform: scaleX(-1);
+}
+
+.sub_section2 {
+  background: url('../intro/16.jpg') no-repeat;
+  background-size: 100%, 900px;
+}
+
+.sub_section3 {
+  background: url('../intro/8.jpg') no-repeat;
+  background-size: 100%, 900px;
+}
+
+.sub_section4 {
+  background: url('../intro/17.jpg');
+  transform: scaleX(-1);
+}
+
+.sub_section5 {
+  background: url('../intro/18.jpg');
+}
+
+.sub_section4 .section_content {
+  transform: scaleX(-1);
+}
+
+.sub_section1 .first_content {
+  transform: scaleX(-1);
+}
+
+.section_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.introduce h1 {
+  font-family: "Do";
+  font-size: 5rem;
+  color: white;
+  letter-spacing: -1;
+  line-height: 80px;
+}
+
+.intro_sub {
+  color: white;
+  margin-top: 2rem;
+}
+
+.intro_sub h4 {
+  font-weight: normal;
+  font-size: 2.5rem;
+}
+
+.intro_sub p {
+  font-size: 2.2rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* 지역리스트 페이지 */
+.location_item {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  border: 1px solid #f4f5fc;
+  padding: 2rem;
+  width: 32%;
+  margin-bottom: 2rem;
+  margin-right: 1.33rem;
+}
+
+.loc_info {
+  padding: 1rem;
+}
+
+.loc_info h2 {
+  margin-bottom: 1rem;
+}
+
+.loc_img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.loc_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 빵집 추천 빵집 리스트 */
+.bakery_list {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  transition: .8s;
+  overflow: hidden;
+}
+
+.baker_item {
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  border: 1px solid #f4f5fc;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  transition: .8s;
+  width: 23%;
+}
+
+.baker_img {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.baker_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.baker_info {
+  width: 100%;
+  padding: 1.5rem;
+  height: 260px;
+}
+
+.baker_info h3 {
+  margin-bottom: .5rem;
+}
+
+.baker_item:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+/* 빵집 리스트 페이지 빵집 리스트 */
+.bakery_content {
+  width: 29%;
+  height: 400px;
+  padding: 2rem;
+  /* background: url('../image/02.png'); */
+  margin-right: 2rem;
+  margin-top: 3.3rem;
+}
+
+.bakery_cont_info {
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.detail_view, .view_menu {
+  width: 48%;
+}
+
+.similar_bakery {
+  margin-top: .7rem;
+  width: 100%;
+}
+
+.subImage_box {
+  width: 95%;
+  height: 150px;
+  margin-bottom: .8rem;
+  overflow: auto;
+}
+
+.subImage_box img {
+  width: 50%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* 메뉴정보 */
+.menuListItem {
+  width: 48%;
+  height: 300px;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.menu_item_info {
+  width: 80%;
+  background: rgba(255, 255, 255, .9);
+  padding: 1.2rem;
+  border-radius: 20px;
+}
+
+.menu_item_info p {
+  font-size: .9rem;
+}
+
+#menuList .modal_content {
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+}
+
+/* 유사한 빵집 */
+.simBaker {
+  position: relative;
+}
+
+.simBaker .sim_rank {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #ffa500;
+  color: white;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simBaker .bakery_cont_info {
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+  background: #fff;
+  color: black;
+  border-radius: 30px;
+}
+
+/* 사용한 정보 */
+.searchDataList > div {
+  margin-bottom: .5rem;
+}
+
+.search_div div {
+  padding: .7rem 1rem;
+  background: #ffa500;
+  color: white;
+  border-radius: 1000px;
+  font-size: .8rem;
+  margin-left: .5rem;
+  cursor: pointer;
+}
+
+/* 검색 인풋 */
+.search_input {
+  width: 65%;
+  padding: .8rem;
+  background: #f4f5fc;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 99px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hash_tag_list {
+  width: 100%;
+}
+
+.search_hashTag {
+  padding: .7rem 1rem;
+  background: #f4f5fc;
+  color: black;
+  border-radius: 1000px;
+  font-size: .9rem;
+  font-weight: bold;
+  margin-left: .5rem;
+  cursor: pointer;
+  transition: .4s;
+  margin-bottom: .3rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.search_hashTag:hover {
+  background: #ffa500;
+  color: whtie;
+  transition: .4s;
+}
+
+.sel_tag {
+  background: #ffa500;
+  color: white;
+}
+
+.ba_tag {
+  margin-top: .5rem;
+}
+
+.ba_tag p {
+  margin-right: .5rem;
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.highlights {
+  background: #ffa500;
+  color: white;
+}
+
+/* 회원가입 페이지 */
+.login_form,
+.join_form {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 70px rgba(0, 0, 0, .2);
+  border: 1px solid #f4f5fc;
+}
+
+.login_form_left,
+.join_form_left {
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.login_form_left img,
+.join_form_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login_form_right,
+.join_form_right {
+  width: 48%;
+  height: 100%;
+  margin-left: 2rem;
+  padding: 2rem;
+}
+
+.login_form_title,
+.join_form_title {
+  margin-bottom: 2rem;
+}
+
+.login_input ul,
+.join_input ul {
+  margin-bottom: 1rem;
+}
+
+/* 이벤트 등록 */
+.event_enr_form {
+  width: 70%;
+  height: 100%;
+  padding: 2rem;
+  box-shadow: 0 0 70px rgba(0, 0, 0, .2);
+}
+
+.event_input {
+  margin-top: 2rem;
+}
+
+.event_input ul {
+  margin-bottom: 1rem;
+}
+
+.event_time input {
+  width: 48%;
+}
+
+.bakery_check label {
+  margin-right: .5rem;
+  font-size: .9rem;
+}
+
+/*이벤트 리스트 페이지*/
+.event_item {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  padding: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.event_info {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .2);
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+}
+
+.event_name {
+  font-size: 2.5rem;
+}
+
+.timer {
+  font-size: 4rem;
+}
+
+.end {
+  font-size: 4rem;
+}
+
+.target_event_bakery {
+  cursor: pointer;
+}
+
+/*광고 관리*/
+.ad_input {
+  margin-top: 2rem;
+}
+
+.ad_banner_list {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.ad_banner_list > div {
+  width: 50%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.del_ad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, .5);
+  pointer-events: none;
+  opacity: 0;
+  transition: .4s;
+}
+
+.ad_banner_list div:hover .del_ad {
+  pointer-events: auto;
+  opacity: 1;
+  transition: .4s;
+}
+
+.del_ad h1 {
+  cursor: pointer;
+}
+
+.ad_banner_list div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*리뷰 폼*/
+.review_enr {
+  width: 100%;
+}
+.review_enr_form {
+  width: 100%;
+}
+
+/*리뷰 리스트*/
+.bakery_review {
+  width: 100%;
+  border: 1px solid #ffa500;
+  padding: 1rem;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.review_img {
+  width: 270px;
+  height: 250px;
+}
+
+.review_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.review_list {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.review_right {
+  margin-left: 1.5rem;
+}
+
+.review_right i, .like_count {
+  font-size: 1.6rem;
+}
+
+.like_count {
+  font-family: "Do";
+}
+
+.review_right p {
+  margin-bottom: 1rem;
+}
+
+.review_info p {
+  margin-bottom: 0;
+  opacity: .8;
+}

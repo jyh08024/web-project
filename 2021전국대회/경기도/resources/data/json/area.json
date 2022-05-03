@@ -1,0 +1,27 @@
+[
+	{
+		"idx": 1,
+		"name": "대덕구",
+		"image": "대덕구.png"
+	},
+	{
+		"idx": 2,
+		"name": "유성구",
+		"image": "유성구.png"
+	},
+	{
+		"idx": 3,
+		"name": "동구",
+		"image": "동구.png"
+	},
+	{
+		"idx": 4,
+		"name": "서구",
+		"image": "서구.png"
+	},
+	{
+		"idx": 5,
+		"name": "중구",
+		"image": "중구.png"
+	}
+]

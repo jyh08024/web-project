@@ -1,0 +1,378 @@
+/* 사용 폰트 로드 */
+@font-face {
+  src: url('../fonts/BlackHanSans-Regular.ttf');
+  font-family: 'HanS';
+}
+
+@font-face {
+  src: url('../fonts/DoHyeon-Regular.ttf');
+  font-family: 'Do';
+}
+
+@font-face {
+  src: url('../fonts/NotoSans/NotoSansKR-Regular.otf');
+  font-family: 'noto';
+}
+
+/* 웹 기본 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html, body {
+  font-family: "noto", "Microsoft Phagspa";
+  font-size: 16px;
+  letter-spacing: 0px;
+  scroll-behavior: smooth;
+}
+
+button, select, input {
+  outline: none;
+  border: none;
+  font-family: "noto";
+}
+
+/* 자주 사용하는 클래스 */
+.wrap {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rap {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex { display: flex; flex-wrap: wrap; }
+.alc { align-items: center; }
+.js { justify-content: space-between; }
+.jc { justify-content: center; }
+.tlc { text-align: center; }
+.white { color: white; }
+.black { color: black; }
+.color { color: #ffa500; }
+.bold { font-weight: bold; }
+
+.btn {
+  padding: .7rem 1.7rem;
+  background: #ffa500;
+  color: black;
+  border-radius: 9999999999999px;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .4s;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.btn2 {
+  padding: .7rem 1.7rem;
+  background: white;
+  color: black;
+  border-radius: 9999999999999px;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .4s;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.btn:hover {
+  background: #fff;
+  color: black;
+  transition: .4s;
+}
+
+.btn2:hover {
+  background: #ffa500;
+  color: black;
+  transition: .4s;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  background: #f4f5fc;
+  border-radius: 20px;
+}
+
+.after_line {
+  background: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.after_line2 {
+  background: #ffa500;
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: .6;
+}
+
+.modal.open, .popup.open {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.popup.open {
+  display: block;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup {
+  width: 1000px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 1px solid #f4f5fc;
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+}
+
+.modal_content {
+  overflow: hidden;
+}
+
+#detail_view {
+  height: 740px;
+  overflow-y: auto;
+}
+
+.modal_left, .modal_right {
+  width: 50%;
+}
+
+.modal_content h3 {
+  margin-bottom: .5rem;
+}
+
+.popup_close {
+  cursor: pointer;
+}
+
+.form_style {
+  width: 70%;
+  height: 100%;
+  padding: 2rem;
+  box-shadow: 0 0 70px rgba(0, 0, 0, .2);
+}
+
+.form_title {
+  margin-bottom: 2rem;
+}
+
+.form_inputs ul {
+  margin-bottom: 1rem;
+}
+/* 로딩애니메이션 */
+@keyframes hidden {
+  0% { opacity: 0; visibility: hidden; pointer-events: none; }
+  100% { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+@keyframes move {
+  0% { width: 50%; }
+  15%, 100% { width: 0%; }
+}
+
+@keyframes text {
+  0%, 20% { transform: scale(1); opacity: 1; }
+  20%, 30% { transform: scale(1.2); }
+  40% { transform: scale(1.4); }
+  50% { transform: scale(1.6); opacity: .9; }
+  60% { transform: scale(1.3); opacity: .8; }
+  70% { transform: scale(1.6); opacity: .7; }
+  80% { transform: scale(1.2); opacity: .3; }
+  90%, 100% { transform: scale(1); opacity: 0; }
+}
+
+.loading_animation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidden 1s infinite;
+  animation-delay: 4s;
+}
+
+.loading_animation .flex {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rect {
+  width: 50%;
+  height: 100%;
+  background: #0e0f19;
+  animation: move 6s infinite;
+  animation-delay: 3s;
+}
+
+.rect:nth-child(2) {
+  transform: scaleX(-1);
+}
+
+.loading_animation h1 {
+  font-family: "Do";
+  font-size: 4rem;
+  opacity: 0;
+  animation: text 3s linear;
+}
+
+.loading_animation2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.loading_animation2 .flex {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rect2 {
+  width: 50%;
+  height: 100%;
+  background: #0e0f19;
+}
+
+.rect2:nth-child(2) {
+  transform: scaleX(-1);
+}
+
+.loading_animation2 h1 {
+  font-family: "Do";
+  font-size: 4rem;
+  opacity: 1;
+}
+
+/* 레이아웃 섹션 설정 */
+.section {
+  margin-bottom: 8rem;
+}
+
+.section_title {
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+.section_title .main_title {
+  font-family: "Do";
+  font-size: 4.3rem;
+}
+
+/* 헤더 영역 */
+.header_rap {
+  background: #0e0f19;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+.logo_area, .navigation {
+  font-family: "Do";
+}
+
+.menu {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.menu li {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.sub_menu {
+  width: 200%;
+  overflow: hidden;
+  padding: 1rem;
+  background: #fff;
+  color: #ffa500;
+  transition: .4s;
+  position: absolute;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.menu li:hover > .sub_menu {
+  max-height: 400%;
+  opacity: 1;
+}
+
+.foo_section {
+  margin-bottom: 1rem;
+}
+
+.foo_right div {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.foo_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
