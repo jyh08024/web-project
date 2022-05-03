@@ -1,0 +1,265 @@
+body,ul,p,h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; box-sizing: border-box; list-style: none; }
+a { text-decoration: none; color: black; }
+*a:hover { text-decoration: none!important; }
+li { display: inline-block; }
+.left { float: left; }
+.right { float: right; }
+[class*="col-md"] {	float: left; padding: 0 10px; box-sizing: border-box; }
+.col-md-12 { width: calc(100%/12 * 12); }
+.col-md-11 { width: calc(100%/12 * 11); }
+.col-md-10 { width: calc(100%/12 * 10); }
+.col-md-9 { width: calc(100%/12 * 9); }
+.col-md-8 { width: calc(100%/12 * 8); }
+.col-md-7 { width: calc(100%/12 * 7); }
+.col-md-6 { width: calc(100%/12 * 6); }
+.col-md-5 { width: calc(100%/12 * 5); }
+.col-md-4 { width: calc(100%/12 * 4); }
+.col-md-3 { width: calc(100%/12 * 3); }
+.col-md-2 { width: calc(100%/12 * 2); }
+.col-md-1 { width: calc(100%/12 * 1); }
+.fit { padding: 0; }
+.w100 { width: 1440px; margin: 0 auto; }
+.blueBtn { background: #26a6df; color: white; }
+.greenBtn { background: #a8eb00; padding: 10px; border-radius: 5px; border: none; }
+.title { margin-top: 70px; margin-bottom: 20px; }
+/*==================================== header ============================================================*/
+header { background: #26a6df; height: 80px; }
+header .w100 .home { float: left; margin-top: 20px; }
+header .w100 ul { font-size: 18px; text-align: right; line-height: 80px; }
+header .w100 ul li { padding: 0 15px; }
+header .w100 ul li a { color: white; text-decoration: none; }
+header .w100 ul li a:hover { color: #fdb913; }
+
+header .w100 ul .subMenu { position: relative; }
+header .w100 ul .subMenu .sub { position: absolute; left: 0; background: #26a6df; text-align: center; top: -160px; z-index: -555; width: 100%; }
+header .w100 ul .subMenu .sub a { color: white; display: block; }
+header .w100 ul .subMenu:hover .sub{ top: 80px; z-index: 555; }
+header .w100 ul .subMenu .sub a:hover { background: #218fc0; display: block; width: 100%; }
+/*========================= member > member =====================================================*/
+.member { width: 700px; margin: 0 auto; }
+.member .title { margin-bottom: 50px; }
+.member form input { width: 100%; border: 1px solid #ccc; padding: 15px 10px; margin-bottom: 30px; border-radius: 5px; }
+.member form .blueBtn { width: 100%; border: none; font-size: 18px; }
+.member form .blueBtn:hover { color: white; background: #0090d0; }
+/*==================================== index > menu ==================================================*/
+.menu { padding: 0; margin-top: 50px; }
+.menu .col-md-4 a { text-decoration: none; }
+.menu .col-md-4 div { margin: 15px 5px; overflow: hidden; border-radius: 5px; border: 1px solid #ccc; transition: all 0.5s; }
+.menu .col-md-4 div:hover { box-shadow: 0 0 10px #969696; }
+.menu .col-md-4 div img { width: 400px; height: 300px; margin-left: 20px; }
+.menu .col-md-4 div .view { margin-bottom: 0;  font-size: 20px; background: #26a6df; border: none; color: white; display: block; text-align: center; padding: 20px 0; text-decoration: none; }
+.menu .col-md-4 div .view:hover { background: #0090d0; }
+/*============================ list > list ===================================================*/
+.list ul li { width: 100%; margin: 20px 0; border: 1px solid #ccc; transition: all 0.5s; height: 210px; padding: 10px 20px; }
+.list ul li img { width: 210px; float: left; margin-right: 60px; height: 130px; margin-top: 30px; }
+.list ul li h4 { font-weight: normal; line-height: 25px; }
+.list ul li h4 span { font-weight : 600; }
+.list ul li .last { margin-left: 20px; }
+.list ul li .right { margin-top: -110px; }
+.list ul li .right a { padding: 10px; border-radius: 5px; margin-left: 10px; text-decoration: none; }
+.list ul li .right a:hover { background: #218fc0; color: white; }
+/*====================== detail > detail ====================================================*/
+.detail .details { margin-top: 50px; }
+.detail .details img { border: 1px solid #e3e3e3; width: 500px; height: 350px; float: left; }
+
+.detail .details table { border-collapse: collapse; margin-left: 80px; float: left; width: calc(100% - 580px); font-size: 18px; }
+.detail .details table tr {  }
+.detail .details table tr th { padding: 10px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; border-top: 1px solid #383838; text-align: center; }
+.detail .details table tr td { padding: 10px 20px; border-top: 1px solid #383838; border-bottom: 1px solid #b1b1b1; }
+.detail .details div { float: left; margin-left: 80px; width: calc(100% - 580px); text-align: right; margin-top: 40px;  }
+.detail .details div .blueBtn { font-size: 16px; margin: 0 20px; width: 130px; padding: 10px 0; }
+.detail .details div .blueBtn:hover { color: white; background: #0090d0; }
+
+.detail .detailImg h2 { margin-top: 80px; margin-bottom: 0px; }
+.detail .detailImg .file { width: 100%; height: 40px; text-align: right; }
+.detail .detailImg .file input { float: right; padding: 5px; border-radius: 5px; border: 1px solid #ccc; }
+.detail .detailImg .file button { float: right; margin-left: 15px; }
+.detail .detailImg .file button:hover { color: white; background: #0090d0; }
+.detail .detailImg ul { padding-left: 0; padding-right: 0; margin-bottom: 50px; }
+.detail .detailImg ul li { margin-top: 30px; }
+.detail .detailImg ul li img { width: 100%; height: 200px; border: 1px solid #e3e3e3; }
+
+/*=========================== reservation > reserv ===================================================*/
+.reserv { padding: 0; height: 100%; }
+.reserv .title { border-bottom: 1px solid #ccc; padding-bottom: 5px; width: 160px; }
+.reserv img {	width: 400px; height: 280px; border: 1px solid #b1b1b1; float: left; margin-right: 50px; margin-top: 40px; }
+
+.reserv .choose  { float: left; height: 500px; padding: 0; }
+.reserv .choose div { margin-bottom: 30px; }
+.reserv .choose div h3 { border-bottom: 1px solid #686868; width: 500px; padding-bottom: 15px; margin-top: 0; }
+.reserv input { padding: 10px; border: 1px solid #ccc; margin-right: 50px; margin-top: 10px; width: 220px; }
+.reserv select { padding: 10px; border: 1px solid #ccc; margin-right: 50px; margin-top: 10px; width: 220px; }
+.reserv .choose .blueBtn { width: 500px; }
+.reserv .choose .blueBtn:hover { color: white; background: #0090d0; }
+/*=========================== cardPay > card ===================================================*/
+.card { width: 800px; height: 100%; margin: 0 auto; }
+.card form .info { width: 800px; border: 1px solid #9a9a9a; padding: 0px 20px; margin-bottom: 30px; }
+.card form .info li { display: block; line-height: 50px; font-size: 16px; }
+.card form .info li label { display: inline-block; font-weight: bold; width: 170px; font-weight: normal; }
+.card form .info li span { font-weight: bold; }
+.card form .info li h2 { display: inline; color: #26a6df; }
+
+.card form .pay { margin-top: 50px; border: 1px solid #9a9a9a; }
+.card form .pay .row { margin: 0; padding: 0; height: 50px; }
+.card form .pay .row .col-md-6 { padding: 0; height: 100%; text-align: center; line-height: 50px; font-size: 18px; }
+.card form .pay .row .col-md-6 a:hover { text-decoration: none; }
+.card form .pay .row .col-md-6 .blueBtn:hover { color: white; }
+.card form .pay .row .col-md-6 .check { background: #e3e3e3; color: black; }
+
+.card form .pay .tab-pane { height: 180px; padding: 10px; font-size: 16px; }
+.card form .pay .tab-pane ul li:nth-child(1) { width: 100%; }
+.card form .pay .tab-pane ul li:nth-child(2) { width: 100%; }
+.card form .pay .tab-pane ul li:nth-child(2) input { height: 35px; }
+.card form .pay .tab-pane ul li:nth-child(3) input { height: 35px; }
+.card form .pay .tab-pane .cashPay li:nth-child(3) { width: 100%; }
+.card form .pay .tab-pane label { width: 100px; line-height: 50px; }
+
+.card form .pay .tab-pane .cardPay li:nth-child(1) { margin-top: 25px; }
+.card form .pay .tab-pane .cardPay li span { margin-left: 5px; margin-right: 15px; }
+.card form .pay .tab-pane .cardPay li .ex { color: red; font-size: 14px; }
+
+.card form .pay .tab-pane .cashPay li select { height: 40px; width: 300px; }
+.card form .pay .tab-pane .cashPay li input { width: 300px; }
+.card form .payment { margin-top: 30px; width: 100%; font-size: 17px; padding: 8px 0; margin-bottom: 30px; }
+.card form .payment:hover { color: white; background: #0090d0; }
+/*========================== mypage > mypage ==================================================*/
+.mypage .page { margin-top: 50px; }
+.mypage .page table { border-collapse: collapse; width: 100%; }
+.mypage .page table tr th { font-size: 18px; padding: 15px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; border-top: 2px solid #383838; text-align: center; }
+.mypage .page table tr th:nth-child(1) { width: 5%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(2) { width: 10%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(3) { width: 15%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(4) { width: 20%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(5) { width: 15%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(6) { width: 10%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(7) { width: 10%; border-right: 1px solid #b1b1b1; }
+.mypage .page table tr th:nth-child(8) { width: 15%; }
+.mypage .page table tr td { border-bottom: 1px solid #ccc; height: 80px; text-align: center; font-size: 15px; }
+.mypage .page table tr td:nth-child(2) img { width: 100px; height: 60px; }
+.mypage .page table tr td:nth-child(2) { text-align: center; }
+.mypage .page table tr td .blueBtn:last-child { margin-right: -10px; margin-left: 20px; }
+.mypage .page table tr td .blueBtn:hover { color: white; background: #0090d0; }
+
+.mypage .cancelT { margin-bottom: 50px; margin-top: 100px; }
+.mypage .cancelT table { border-collapse: collapse; width: 100%; }
+.mypage .cancelT table tr th { font-size: 18px; padding: 15px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; border-top: 2px solid #383838; text-align: center; }
+.mypage .cancelT table tr td { border-bottom: 1px solid #ccc; height: 70px; text-align: center; font-size: 15px; }
+.mypage .cancelT table tr th:nth-child(1) { width: 25%; border-right: 1px solid #b1b1b1; }
+.mypage .cancelT table tr th:nth-child(2) { width: 20%; border-right: 1px solid #b1b1b1; }
+.mypage .cancelT table tr th:nth-child(3) { width: 15%; border-right: 1px solid #b1b1b1; }
+.mypage .cancelT table tr th:nth-child(4) { width: 10%; border-right: 1px solid #b1b1b1; }
+.mypage .cancelT table tr th:nth-child(5) { width: 30%; border-right: 1px solid #b1b1b1; }
+/*=============================== contract > contract =============================================*/
+.contract  { margin-top: 50px; }
+.contract .blueBtn { float: right; margin-bottom: 50px; padding: 10px 15px; font-size: 15px; }
+.contract .blueBtn:hover { color: white; background: #0090d0; }
+.contract table { border: 1px solid #a3a3a3; border-collapse: collapse; width: 100%; margin-bottom: 30px; }
+.contract table tr { border-bottom: 1px solid #a3a3a3; height: 40px; }
+.contract table tr:nth-child(1) th h2 { text-align: center; height: 70px; margin: 0; padding-top: 17px; background: white; }
+.contract table tr td input { width: 100%; border: none; }
+.contract table tr th h4 { text-align: center; height: 50px; margin: 0; padding-top: 17px; background: white; }
+.contract table tr th { background: #dfdfdf; border-left: 1px solid #a3a3a3; border-right: 1px solid #a3a3a3; font-size: 16px; }
+.contract table tr .gray h4 { background: #dfdfdf; }
+.contract table .last td { padding: 40px 15px; }
+.contract table .last td h4 { margin-top: 30px; font-weight: bold; }
+.contract table .last td h4:nth-child(1) { margin-top: 0px; }
+.contract table .last td p { font-size: 16px; margin-left: 10px; }
+/*=============================== rental > cart =============================================*/
+.search { box-shadow: 0 0 10px #ccc; border-radius: 5px;
+padding: 20px 10px; text-align: center; margin-top: 50px; font-size: 15px; }
+.search select { height: 40px; width: 160px; padding: 5px; margin-right: 30px; margin-left: 5px; border-radius: 5px; }
+.search .Rtime { width: 100px; }
+.search input { padding: 5px; height: 40px; margin-right: 20px; margin-left: 5px; width: 150px; }
+.search .greenBtn { height: 40px; width: 60px; }
+.search .greenBtn:hover { background: #8fc900; }
+
+.cartList { margin-top: 50px; }
+.cartList ul { padding: 0; }
+.cartList ul li { margin-bottom: 20px; }
+.cartList ul li div { border: 1px solid #e3e3e3;  height: 200px; width: 100%; transition: all 0.5s; }
+.cartList ul li div:hover { box-shadow: 0 0 10px #d7d7d7; }
+.cartList ul li div img { width: 200px; height: 140px; float: left; margin-left: 15px; margin-top: 15px; }
+.cartList ul li div p { width: 300px; margin-left: 20px; line-height: 25px;  float: left; font-size: 15px; }
+.cartList ul li div p:nth-child(2) { margin-top: 20px; }
+.cartList ul li div p:nth-child(6) { margin-left: 30px; margin-top: 0px; }
+.cartList ul li div p span { font-weight: bold; }
+.cartList ul li div .btn { display: inline-block; margin-top: 80px; margin-left: 50px; }
+.cartList ul li div .btn:hover { color: white; background: #218fc0; }
+
+.cartList .line { width: 100%; height: 2px; border-bottom: 2px solid #ccc; clear: both; display: block; padding-top: 50px; }
+
+.cartList .baskets .title { margin-top: 70px; margin-bottom: 30px; }
+.cartList .baskets table { border-collapse: collapse; width: 100%; }
+.cartList .baskets table tr th { font-size: 18px; padding: 15px; border-top: 2px solid #9e9e9e; border-bottom: 1px solid #aaa; text-align: center; background: #f8f8f8; }
+.cartList .baskets table tr th:nth-child(1) { width: 10%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(2) { width: 13%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(3) { width: 17%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(4) { width: 20%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(5) { width: 10%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(6) { width: 10%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(7) { width: 10%; border-right: 1px solid #aaa; }
+.cartList .baskets table tr th:nth-child(8) { width: 10%; }
+.cartList .baskets table tr td { text-align: center; padding: 10px; border-bottom: 1px solid #e3e3e3; font-size: 15px; }
+.cartList .baskets table tr td a:hover { color: white; background: #218fc0; }
+.cartList .baskets table tr td:nth-child(7) { font-weight: bold; font-size: 18px; }
+.cartList .baskets table tr td img { width: 100px; height: 70px; }
+.cartList .baskets table tr:last-child { border-bottom: 2px solid #747474; }
+.cartList .baskets .total {  margin: 20px 0; }
+.cartList .baskets .total p { font-size: 22px; font-weight: bold; margin-top: 10px; padding: 0 50px; margin-bottom: 50px; width: 85%; float: left;}
+.cartList .baskets .total p span { color: #26a6df; float: right; margin-right: -20px; }
+.cartList .baskets .total a { margin-top: 5px; display: inline-block; float: right; margin-right: 65px; }
+.cartList .baskets .total a:hover { color: white; background: #218fc0; }
+/*======================== material > material =====================================================*/
+.card form .multiple li { height: auto; line-height: normal; padding: 10px 0; border-bottom: 1px solid #ddd; }
+.card form .multiple li:last-child { border-bottom: none;}
+.card form .multiple li p { margin-bottom: 0px; padding: 3px 0;}
+.card form .multiple li p:last-child span { color: #26a6df;}
+/*=============================== admin > admin ================================================*/
+.admin table { border-collapse: collapse; width: 100%; }
+.admin table tr th { font-size: 18px; padding: 15px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; border-top: 2px solid #383838; text-align: center; }
+.admin table tr td { border-bottom: 1px solid #ccc; height: 70px; text-align: center; }
+.admin table tr td { border-bottom: 1px solid #ccc; height: 70px; }
+.admin table tr th:nth-child(1) { width: 10%; border-right: 1px solid #ccc; }
+.admin table tr th:nth-child(2) { width: 10%; border-right: 1px solid #ccc; }
+.admin table tr th:nth-child(3) { width: 10%; border-right: 1px solid #ccc; }
+.admin table tr th:nth-child(4) { width: 15%; border-right: 1px solid #ccc; }
+.admin table tr th:nth-child(5) { width: 20%; border-right: 1px solid #ccc; }
+.admin table tr th:nth-child(6) { width: 15%; border-right: 1px solid #ccc; }
+.admin table tr th:nth-child(7) { width: 10%; border-right: 1px solid #ccc; }
+.admin table tr td .blueBtn:hover { color: white; background: #0090d0; }
+/*============================== item > item =========================================*/
+.item table { border-collapse: collapse; width: 100%; }
+.item table tr th { font-size: 18px; padding: 15px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; border-top: 2px solid #383838; text-align: center; }
+.item table tr td { border-bottom: 1px solid #ccc; height: 70px; text-align: center; }
+.item table tr th:nth-child(1) { width: 10%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(2) { width: 10%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(3) { width: 10%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(4) { width: 15%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(5) { width: 20%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(6) { width: 15%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(7) { width: 10%; border-right: 1px solid #ccc; }
+.item table tr th:nth-child(8) { width: 10%; }
+.item table tr td .blueBtn:hover { color: white; background: #0090d0; }
+/*======================== material > material =====================================================*/
+.material .date { width: 400px; margin: 0 auto; text-align: center; margin-bottom: 20px; font-size: 2.2em; }
+.material .arrow { font-size: 2.5em; margin-bottom: 20px; border: none; background: none; margin-top: -8px; }
+.material .formerly { float: left; margin-left: 500px; }
+.material .next { float: right; margin-right: 500px; }
+.material table { border-collapse: collapse; width: 100%; }
+.material table tr { text-align: center; }
+.material table tr th { border-bottom: 1px solid #b1b1b1; text-align: center; }
+.material table tr:nth-child(1) th { font-size: 18px; padding: 15px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; border-top: 2px solid #383838; }
+.material table tr:nth-child(1) th:nth-child(1) { width: 20%; border-right: 1px solid #b1b1b1; }
+.material table tr:nth-child(1) th:nth-child(2) { width: 40%; border-right: 1px solid #b1b1b1; }
+.material table tr:nth-child(1) th:nth-child(4) { width: 40%; }
+.material table tr:nth-child(2) th { padding: 10px; height: 30px; border-bottom: 1px solid #b1b1b1; background: #f8f8f8; }
+.material table tr:nth-child(2) th:nth-child(1) { width: 20%; border-right: 1px solid #b1b1b1; }
+.material table tr:nth-child(2) th:nth-child(2) { width: 20%; border-right: 1px solid #b1b1b1; }
+.material table tr:nth-child(2) th:nth-child(3) { width: 20%; border-right: 1px solid #b1b1b1; }
+.material table tr:nth-child(2) th:nth-child(4) { width: 20%; }
+.material table tr td { border-bottom: 1px solid #ccc; height: 40px; }
+.material table tr td:nth-child(1) { border-right: 1px solid #b1b1b1; }
+.material table tr td:nth-child(2) { border-right: 1px solid #b1b1b1; }
+.material table tr td:nth-child(3) { border-right: 1px solid #b1b1b1; }
+.material table tr td:nth-child(4) { border-right: 1px solid #b1b1b1; }
+.material table .sum { background: #f8f8f8; font-weight: bold; }
