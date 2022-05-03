@@ -1,0 +1,117 @@
+@keyframes slide{
+  0%, 100%, 22.22% {margin-left: 0}
+  33.33%, 55.55% {margin-left: -100%}
+  66.66%, 88.88% {margin-left: -200%}
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide_wrap {
+  width: 300%;
+  height: 800px;
+  display: flex;
+  overflow: hidden;
+  background: black;
+  animation: slide 9s infinite;
+}
+
+.slide_wrap div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide_wrap div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner_title {
+  padding: 3rem;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bt_title p {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 600px;
+}
+
+.bt_title h4 {
+  font-weight: 600px;
+  font-size: 16px;
+}
+
+.middle {
+  margin-top: 1rem;
+  font-size: 28px;
+  display: flex;
+  position: relative;
+}
+
+.lineDiv {
+  width: 80%;
+  height: 5px;
+  background: #d62527;
+  position: absolute;
+  top: 1rem;
+  left: -5rem;
+}
+
+.middle p {
+  margin-left: 10rem;
+}
+
+.bn_dt {
+  margin-top: .6rem;
+}
+
+.movie_list_area {
+  margin-top: 7rem;
+}
+
+.movie_list {
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main_movie_item {
+  width: 100%;
+  height: 100%;
+}
+
+.item_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item_content {
+  margin-top: 1.4rem;
+}
+
+.item_content .explain {
+  font-size: .8rem;
+  letter-spacing: 0.1px;
+  margin-top: .5rem;
+}
+
+.item_content .maker {
+  margin-top: .5rem;
+  font-size: .8rem;
+}
