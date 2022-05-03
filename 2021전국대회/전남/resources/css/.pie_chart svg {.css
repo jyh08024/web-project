@@ -1,0 +1,205 @@
+.pie_chart svg {
+  width: 220px;
+  height: 220px;
+  transform: rotate(-90deg);
+  border-radius: 9999999999999999px;
+}
+
+circle {
+  fill: none;
+  stroke-width: 32;
+}
+
+circle.first {
+  stroke: #ffa500;
+  animation: c1 .8s forwards linear;
+}
+
+circle.second {
+  stroke: #00f7ff;
+  animation: c2 .8s forwards linear;
+}
+
+circle.first {
+  stroke: #8c00ff;
+  animation: c3 .8s forwards linear;
+}
+
+@keyframes c1 {
+  0% { stroke-dasharray: 0 100; }
+  100% { stroke-dasharray: 34 100; }
+}
+
+@keyframes c2 {
+  0% { stroke-dasharray: 34 100; }
+  100% { stroke-dasharray: 60 100; }
+}
+
+@keyframes c3 {
+  0% { stroke-dasharray: 60 100; }
+  100% { stroke-dasharray: 110 100; }
+}
+
+.stick_chart {
+  width: 100%;
+  height: 100%;
+}
+
+.stick_chart > div {
+  width: 100%;
+  height: 100%;
+}
+
+.stick_chart > div > div {
+  width: 0%;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.stick_chart > div > div:nth-child(1) {
+  background: #ffa500;
+  animation: stick_1 1s forwards;
+}
+
+.stick_chart > div > div:nth-child(2) {
+  background: #00f7ff;
+  animation: stick_2 1s forwards;
+}
+
+.stick_chart > div > div:nth-child(3) {
+  background: #8c00ff;
+  animation: stick_3 1s forwards;
+}
+
+@keyframes stick_1 {
+  100% { width: 100%; }
+}
+
+@keyframes stick_2 {
+  100% { width: 40%; }
+}
+
+@keyframes stick_3 {
+  100% { width: 70%; }
+}
+
+.line_chart {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.line_chart > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10%;
+}
+
+.line_chart > div > div {
+  width: 33%;
+  height: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  animation: div_size 1s forwards;
+}
+
+.line_chart > div > div:nth-child(3) {
+  animation: div_size 1.05s forwards;
+}
+
+.line_chart > div > div > .line {
+  width: 200%;
+  height: 2px;
+  background: #000;
+  margin-bottom: 1rem;
+}
+
+.line_chart > div > div:nth-child(1) .line {
+  transform-origin: bottom right;
+  margin-left: -105%;
+  animation: line_1 1s forwards;
+}
+
+.line_chart > div > div:nth-child(2) .line {
+  transform-origin: bottom left;
+  margin-right: -105%;
+  animation: line_2 1s forwards;
+}
+
+.line_chart > div > div:nth-child(3) .line {
+  transform-origin: bottom right;
+  margin-left: -105%;
+  animation: line_3 1s forwards;
+}
+
+.line_chart > div > div:nth-child(1)::before,
+.line_chart > div > div:nth-child(1)::after,
+.line_chart > div > div:nth-child(3)::before,
+.line_chart > div > div:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  background: 000;
+  border: 1px solid #fff;
+  border-radius: 99999999999999px;
+}
+
+.line_chart > div > div:nth-child(1)::before,
+.line_chart > div > div:nth-child(3)::before {
+  top: 0%;
+  left: -1%;
+}
+
+.line_chart > div > div:nth-child(1)::after,
+.line_chart > div > div:nth-child(3)::after {
+  right: 0;
+}
+
+.line_cahrt > div > div:nth-child(1)::after {
+  right: 0;
+}
+
+.line_chart > div > div:nth-child(1)::after {
+  bottom: .7rem;
+}
+
+.line_chart > div > div:nth-child(1)::before {
+  animation: dot_move 1s forwards;
+}
+
+.line_chart > div > div:nth-child(1)::before {
+  animation: dot_move_2 1s forwards;
+}
+
+@keyframes div_size {
+  0% { height: 2rem; }
+  100% { height: 11rem; }
+}
+
+@keyframes line_1 {
+  100% { transform: rotate(34deg); }
+}
+
+@keyframes line_2 {
+  100% { transform: rotate(-39deg); }
+}
+
+@keyframes line_3 {
+  100% { transform: rotate(30deg); margin-bottom: 4.5rem; }
+}
+
+@keyframes dot_move {
+  100% { top: 2.3rem; }
+}
+
+@keyframes dot_move_2 {
+  0% { bottom: 0rem; }
+  100% { bottom: 4.4rem; }
+}
