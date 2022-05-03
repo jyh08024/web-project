@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <script src="resources/js/jquery-3.6.0.min.js"></script>
+  <script src="resources/js/app.js"></script>
+  <link rel="stylesheet" href="resources/js/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <script src="resources/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+<body>
+
+  <div class="wrap video_cont">
+    <div class="control_pannel flex alc js">
+      <div class="control_btns flex alc js">
+        <button class="btn tool_btn" data-tool="line">자유곡선</button>
+        <button class="btn tool_btn" data-tool="rect">사각형</button>
+        <button class="btn tool_btn" data-tool="text">텍스트</button>
+        <button class="btn tool_btn" data-tool="sel">선택</button>
+        <button class="btn state_btn" data-tool="play">재생</button>
+        <button class="btn state_btn" data-tool="pause">정지</button>
+        <button class="btn state_btn" data-tool="del_all">초기화</button>
+        <button class="btn state_btn" data-tool="sel_del">선택 삭제</button>
+        <button class="btn state_btn" data-tool="download">다운로드</button>
+        <button class="btn merge_btn" data-tool="merge">병합</button>
+      </div>
+
+      <div class="text_styles flex alc js">
+        <div>
+          <p>색상</p>
+          <select class="input txt_color" data-style="color">
+            <option value="gray" selected>gray</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+          </select>
+        </div>
+        <div>
+          <p>선 두께</p>
+          <select class="input txt_weight" data-style="weight">
+            <option value="3" selected>3px</option>
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+          </select>
+        </div>
+        <div>
+          <p>글자 크기</p>
+          <select class="input txt_size" data-style="fontSize">
+            <option value="16" selected>16px</option>
+            <option value="18">18px</option>
+            <option value="24">24px</option>
+            <option value="32">32px</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="after_line"></div>
+
+    <div class="video_area">
+      <svg></svg>
+      <video></video>
+      <span class="input_p"></span>
+    </div>
+
+    <div class="play_times flex alc js">
+      <div class="cur_time">
+        현재재생시간: <span>00:00:00:00</span>
+      </div>
+      <div class="total_time">
+        총 재생 시간: <span>00:00:00:00</span>
+      </div>
+    </div>
+    <div class="play_times flex alc js">
+      <div class="clip_start">
+        시작 시간: <span>00:00:00:00</span>
+      </div>
+      <div class="clip_during">
+        유지 시간: <span>00:00:00:00</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="clip_move">
+        <div class="arc"></div>
+        <div class="stick"></div>
+      </div>
+      <div class="clips_area"></div>
+      <div class="video_clip">
+        <!-- <div class="clip_obj"></div> -->
+      </div>
+    </div>
+
+    <div class="sel_video_list flex alc js">
+      <div class="select_video" data-video="resources/movie/movie1.mp4">
+        <img src="resources/movie/movie1-cover.jpg" alt="movie" title="movie">
+      </div>
+      <div class="select_video" data-video="resources/movie/movie2.mp4">
+        <img src="resources/movie/movie2-cover.jpg" alt="movie" title="movie">
+      </div>
+      <div class="select_video" data-video="resources/movie/movie3.mp4">
+        <img src="resources/movie/movie3-cover.jpg" alt="movie" title="movie">
+      </div>
+      <div class="select_video" data-video="resources/movie/movie4.mp4">
+        <img src="resources/movie/movie4-cover.jpg" alt="movie" title="movie">
+      </div>
+      <div class="select_video" data-video="resources/movie/movie5.mp4">
+        <img src="resources/movie/movie5-cover.jpg" alt="movie" title="movie">
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

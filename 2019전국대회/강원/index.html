@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <script src="resources/js/jquery-3.6.0.min.js"></script>
+  <script src="resources/js/app.js"></script>
+  <script src="resources/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+<body>
+
+  <div class="flex alc js main_layout">
+    <div class="save">
+      <div class="layout_title">
+        <h2>SAVE</h2>
+      </div>
+
+      <div class="save_list">
+
+      </div>
+    </div>
+    <div class="layout">
+      <div class="layout_title">
+        <h2>LAYOUT</h2>
+      </div>
+
+      <div class="row_num">
+      </div>
+      <div class="col_num">
+      </div>
+
+
+      <div class="layout_total">
+        <div class="layout_box">
+          
+        </div>
+
+        <div class="move_box">
+
+        </div>
+      </div>
+      
+      <div class="layout_bottom flex alc">
+        <select name="layout_name" class="layout_name input" style="width: 10%;">
+          <option value="">선택</option>
+        </select>
+        <p class="now_booth">선택</p>
+        <div class="color_box"></div>
+        <div class="booth_size"><span class="real_size">0</span>㎡</div>
+        <button class="save_layout btn">저장</button>
+        <button class="del_layout btn">삭제</button>
+      </div>
+    </div>
+    <div class="type">
+      <div class="layout_title">
+        <h2>TYPE</h2>
+      </div>
+
+      <div class="layout_type">
+        <div class="layout_0" data-type="0"></div>
+        <div class="layout_1" data-type="1"></div>
+        <div class="layout_2" data-type="2"></div>
+        <div class="layout_3" data-type="3"></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .layout_total {
+      width: 100%;
+      position: relative;
+    }
+
+    .layout_box {
+      width: 100%;
+      height: 600px;
+      display: grid;
+      grid-template-columns: repeat(80, 1fr);
+      margin-bottom: 1rem;
+      /* user-select: none; */
+    }
+
+    .layout_box > div {
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, .3);
+      user-select: none;
+    }
+
+    .layout_box > .booth {
+      width: 0;
+      height: 0;
+      border: none;
+    }
+
+    .road {
+      background: #000;
+    }
+
+    .layout_type > div {
+      width: 320px;
+      display: grid;
+      grid-template-columns: repeat(80, 1fr);
+      margin-bottom: .5rem;
+      cursor: pointer;
+    }
+
+    .layout_type > div > div {
+      width: 4px;
+      height: 4px;
+      border: 1px solid rgba(0, 0, 0, .3);
+    }
+
+    .now_booth {
+      margin: 5px;
+    }
+
+    .tmp_booth {
+      background: rgba(0, 0, 0, .4);
+      position: absolute;
+    }
+
+    .tmp_view {
+      position: absolute;
+    }
+
+    .move_box {
+      width: 0;
+      height: 0;
+    }
+
+    .booth {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0;
+    }
+  </style>
+  
+</body>
+</html>

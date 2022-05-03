@@ -1,0 +1,135 @@
+<div class="video_area">
+    <svg></svg>
+    <video src="resources/movie/movie5.mp4"></video>
+    <span class="input_p"></span>
+
+    <div class="play_pause">
+      <div class="play" onclick="videoP()">재생</div>
+      <div class="pause" onclick="videoP()">정지</div>
+    </div>
+  </div>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    html, body {
+      font-size: 16px;
+      font-family: "Microsoft Phagspa";
+      letter-spacing: 0;
+    }
+
+    .video_area {
+      width: 1300px;
+      height: 650px;
+      background: #000;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .video_area > video {
+      user-select: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .polyline {
+      stroke-width: 3px;
+      fill: none;
+      pointer-events: none;
+    }
+
+    .play_pause {
+      position: absolute;
+      z-index: 9999;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: .5s;
+    }
+
+    .pause {
+      display: none;
+    }
+
+    .play_pause > div {
+      width: 100px;
+      padding: 2.32rem 0rem;
+      /* display: flex; */
+      /* align-items: center; */
+      /* justify-content: center; */
+      text-align: center;
+      background: #ffa500;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  </style>
+
+  <script>
+    let state = false;
+
+    function videoP() {
+      state = !state
+
+      console.log(state);
+      document.querySelector('video')[state ? 'play' : 'pause']();
+      document.querySelector('.pause').style.display = state ? "block" : "none";
+      document.querySelector('.play').style.display = state ? "none" : "block";
+    }
+
+    let viewState = false;
+
+    document.querySelector('.video_area').addEventListener('mouseover', function() {
+      if (!viewState) {
+        return;
+      }
+
+      document.querySelector('.play_pause').style.opacity = 1;
+    })
+
+    document.querySelector('.video_area').addEventListener('mouseleave', function() {
+      viewState = true;
+      document.querySelector('.play_pause').style.opacity = 0;
+    })
+
+    document.querySelector('.video_area > video').addEventListener('timeupdate', () => {
+      viewSet();
+    })
+
+    function viewSet() {
+      const playTime = document.querySelector('video').currentTime;
+      const svg = document.querySelectorAll(`svg > *`);
+  
+      svg.forEach((v, i) => {
+        v.style.display = "none";
+        const start = v.dataset.start;
+        const end = v.dataset.end;
+  
+        if (playTime >= start && playTime <= end) {
+          v.style.display = 'block';
+        }
+      })
+    }
+  </script> 
