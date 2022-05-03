@@ -1,0 +1,1115 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html, body {
+  font-family: "Microsoft Phagspa", "Malgun Gothic";
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+button, input, select {
+  outline: none;
+  border: none;
+}
+
+/* 자주 사용하는 클래스 */
+.wrap {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex { display: flex; flex-wrap: wrap; }
+.alc { align-items: center; }
+.js { justify-content: space-between;}
+.jc { justify-content: center; }
+.tlc { text-align: center; }
+.white { color: white; }
+.black { color: black; }
+.color { color: #ff8400; }
+.bold { font-weight: bold; }
+.link { text-decoration: underline; }
+.ts { text-shadow: 0 0 70px #ff8400; }
+
+.btn {
+  padding: .7rem 1.7rem;
+  background: #ff8400;
+  color: black;
+  border-radius: 9999999999999px;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .4;
+  border: 1px solid rgba(0, 0, 0, .1);
+  font-weight: bold;
+}
+
+.btn2 {
+  padding: .7rem 1.7rem;
+  background: white;
+  color: black;
+  border-radius: 9999999999999px;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .4;
+  border: 1px solid rgba(0, 0, 0, .1);
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #fff;
+  color: black;
+  transition: .4s;
+}
+
+.btn2:hover {
+  background: #ff8400;
+  color: black;
+  transition: .4s;
+}
+
+.after_line {
+  background: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.after_line2 {
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header_line {
+  background: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 7rem;
+}
+
+.section_title {
+  margin-bottom: 2rem;
+}
+
+.section_title .main_title {
+  margin-bottom: .8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.section_title .main_title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: #ff8400;
+  opacity: .8;
+  left: 0;
+  top: 50%;
+  border-radius: 99999px;
+  animation: animate 2s infinite;
+}
+
+.main_title_left {
+  font-size: 1.5rem;
+}
+
+.input {
+  padding: 1rem;
+  background: #f4f5fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* 모달 팝업 */
+.modal.open, .popup.open {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.popup.open {
+  display: block;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.popup {
+  width: 900px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 1px solid #f4f5fc;
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+}
+
+#map_baker .other_info {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.popup_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup_close {
+  cursor: pointer;
+}
+
+@keyframes animate {
+  0% { width: 0%; }
+  50% { width: 100%; }
+  100% { opacity: .1; }
+}
+
+/* 헤더 */
+header {
+  width: 100%;
+  padding-bottom: 1rem;
+  background: rgba(255, 255, 255, .7);
+}
+
+.header_top {
+  justify-content: flex-end;
+  margin-bottom: .8rem;
+}
+
+.header_top a {
+  opacity: .7;
+  margin-right: .7rem;
+  text-decoration: underline;
+}
+
+.main_menu li {
+  text-align: center;
+  padding: 1rem;
+  position: relative; 
+  transition: .4s;
+  border-radius: 99999999999px;
+}
+
+.sub_menu {
+  width: 140%;
+  font-size: 1rem;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+  transition: .4s;
+  position: absolute;
+  left: 0;
+  max-height: 0;
+  opacity: 0;
+  z-index: 100;
+  margin-top: 1rem;
+}
+
+.sub_menu li {
+  border-radius: 99999999999px;
+}
+
+.main_menu li:hover > .sub_menu {
+  max-height: 300%;
+  opacity: 1;
+}
+
+.main_menu li:hover {
+  background: #ff8400;
+  color: #fff;
+  transition: .4s;
+}
+
+/* 비주얼 영역 */
+@keyframes slide {
+  0% { opacity: 0; transform: scale(.4); }
+  10.11%, 33.33% { opacity: .8; transform: scale(1); margin-left: 0%; }
+  44.44%, 100% { opacity: 0; transform: scale(.4); margin-left: -100%; }
+}
+
+.visual_section {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.visual_title h2 {
+  position: absolute;
+  padding: .5rem 2rem;
+  background: #ff8400;
+  color: white;
+  font-size: 1.1rem;
+  z-index: 999;
+  top: -3%;
+}
+
+.visual_slide {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide_wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #000;
+}
+
+.slide_wrap div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: slide 8s infinite;
+  opacity: 0;
+  transform: scale(.4);
+}
+
+.slide_wrap div:first-child {
+  z-index: 99;
+}
+
+.slide_wrap div:nth-child(2) {
+  z-index: 88;
+  animation-delay: 3s;
+}
+
+.slide_wrap div img {
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
+
+.visual_text {
+  position: absolute;
+  padding: 2rem;
+  background: #fff;
+  color: #000;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.visual_text h3 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.visual_text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text_box_mid p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.box_line {
+  width: 80%;
+  height: 5px;
+  background: #ff8400;
+  margin-left: -30%;
+}
+
+/* 추천 빵집 영역 */
+.recom_bakery_list {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.recom_bakery {
+  width: 100%;
+  height: 370px;
+  position: relative;
+}
+
+.bakery_img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bakery_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.bakery_info {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, .8);
+  padding: 1rem;
+}
+
+.bakery_info div h1 {
+  font-size: 2.5rem;
+}
+
+.bakery_info div h2 {
+  font-size: 2rem;
+  color: #ff8400;
+}
+
+.bakery_info div h1, .bakery_info div h2 {
+  margin-bottom: 1rem;
+}
+
+/* 추천 빵 */
+.recom_bread_list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.recom_bread {
+  width: 100%;
+}
+
+.rec_bread_img {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  margin-bottom: .5rem;
+}
+
+.rec_bread_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rec_bread_info {
+  text-align: center;
+}
+
+.rec_bread_info h2 {
+  font-size: 1.3rem;
+  margin-bottom: .8rem;
+}
+
+.rec_bread_info .intro {
+  font-size: 1rem;
+  opacity: .8;
+  margin-bottom: .5rem;
+}
+
+.rec_pri {
+  font-size: 1.2rem;
+  color: #ff8400;
+  font-weight: bold;
+}
+
+/* 공지사항 */
+.notice_box {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notice_img {
+  height: 100%;
+  overflow: hidden;
+}
+
+.notice_img img {
+  height: 100%;
+}
+
+.notice_item {
+  width: 140%;
+}
+
+.notice_item h4 {
+  margin-bottom: .5rem;
+}
+
+.notice_item h1 {
+  margin-bottom: 1rem;
+}
+
+.notice_item p {
+  margin-bottom: 1rem;
+}
+
+.notice_item h3 {
+  opacity: .7;
+}
+
+.notice_item .after_line {
+  width: 100%;
+}
+
+.notice_section > .after_line {
+  background: rgba(0, 0, 0, .5);
+}
+
+/* 푸터 */
+.foo_top {
+  margin-bottom: 2rem;
+}
+
+.foo_menu a {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.sns_icon {
+  font-size: 1.5rem;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  html, body {
+    font-size: 10px;
+  }
+
+  .wrap {
+    max-width: 480px;
+  }
+
+  .header_top {
+    justify-content: center;
+  }
+
+  .header_main {
+    display: block;
+    text-align: center;
+  }
+
+  .recom_bakery_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .notice_box {
+    display: block;
+    height: 100%;
+  }
+
+  .notice_img {
+    width: 100%;
+  }
+
+  .notice_img img {
+    width: 100%;
+  }
+}
+
+/* 서브 페이지 */
+.sub_page_visual {
+  width: 100%;
+  height: 300px;
+  background: url('../img/visual05.jpg') no-repeat;
+  background-size: 100%, 100%;
+  background-position: center;
+  margin-bottom: 7rem;
+}
+
+.sub_page_title {
+  height: 100%;
+  color: white;
+}
+
+.intro_section_title {
+  margin-bottom: 5rem;
+}
+
+.intro_title h1 {
+  font-weight: 500;
+}
+
+.city_intro {
+  margin-bottom: 3rem;
+}
+
+/* 대표 빵집 */
+.famous_bakery_item {
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.famous_bakery_img {
+  width: 380px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.famous_bakery_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.famous_bakery_info h1 {
+  margin-bottom: 2rem;
+}
+
+.famous_bakery_info {
+  margin-left: 2rem;
+}
+
+.famous_bakery_info div p {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+/* 빵드컵 */
+.worldcup_type div {
+  margin-right: 1.5rem;
+}
+
+.worldcup_type label {
+  font-size: 1.5rem;
+}
+
+.worldcup_type input {
+  width: 20px;
+  height: 20px;
+}
+
+/* 빵드컵 */
+.worldcup_section {
+  margin-top: 2rem;
+}
+
+.worldcup_section ._worldcup {
+  height: 600px;
+  position: relative;
+}
+
+.now_round {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -10%);
+  z-index: 99;
+}
+
+.now_round h1 {
+  padding: 1rem;
+  background: rgba(255, 255, 255, .8);
+  font-size: 2.5rem;
+}
+
+.now_round > div {
+  position: relative;
+  width: 1800px;
+  height: 800px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.worldcup_list {
+  width: 100%;
+  height: 100%;
+}
+
+.worldcup_item {
+  width: 49%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.worldcup_img {
+  width: 100%;
+  height: 100%;
+}
+
+.worldcup_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.worldcup_text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, .8);
+}
+
+.winner_img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.winner_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.winner_info {
+  margin-left: 2rem;
+}
+
+.winner_info p {
+  margin-top: .5rem;
+}
+
+.winner_other {
+  margin-top: 2rem;
+}
+
+.other_info {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+}
+
+.other_item {
+  width: 100%;
+}
+
+.other_item_img {
+  width: 100%;
+  height: 300px;
+}
+
+.other_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tor_table {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background: rgba(255, 255, 255, .7);
+}
+
+.tor_round {
+  margin-left: 2rem;
+  display: flex;
+}
+
+.tor_round div {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  position: relative;
+  padding: .8rem;
+}
+
+.tor_round div:nth-child(2) {
+  border-right: 1px solid #000;
+  border-left: none;
+}
+
+/*빵드컵 대진표*/
+.floor {
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+
+.floor .item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.floor .item.half {
+  min-width: 2px !important;
+  width: 2px !important;
+}
+
+.floor .item .lineBox {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 100%;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
+  border-top: 2px solid blue;
+}
+
+.floor .item.half .lineBox {
+  border-right: none;
+  border-top: none;
+}
+
+/* 대전 빵지도 페이지 */
+.bakery_map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pin_info {
+  position: absolute;
+  z-index: 100;
+  padding: 1rem;
+  background: #f4f5fc;
+  border-radius: 20px;
+  display: none;
+}
+
+.map_section_inner {
+  width: 100%;
+}
+
+.map_section_inner > div {
+  width: 50%;
+}
+
+.map_button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shop_loc {
+  width: 300px;
+  height: 300px;
+}
+
+.baker_enr_form ul li .input {
+  width: 100%;
+}
+
+.shop_loc img {
+  width: 100%;
+  height: 100%;
+}
+
+.sale_Bread {
+  height: 60px;
+  overflow-y: scroll;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.loc_pin {
+  width: 30px;
+  height: 30px;
+}
+
+/*로그인 페이지*/
+.login_form_area {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 0 70px rgba(0, 0, 0, .2);
+  border: 1px solid #f4f5fc;
+}
+
+.login_form {
+  width: 100%;
+  height: 100%;
+}
+
+.login_form_left {
+  width: 49%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.login_form_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login_form_right {
+  width: 45%;
+  margin-left: 2rem;
+  padding: 2rem;
+}
+
+.form_input {
+  width: 100%;
+}
+
+.form_input ul {
+  margin-bottom: 1.5rem;
+}
+
+.form_input input {
+  width: 100%;
+}
+
+/*픽업주문*/
+/*주문하기*/
+.shop_list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 3rem;
+}
+
+.shop_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.shop_img {
+  width: 100%;
+  height: 80%;
+}
+
+.shop_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rank_star {
+  position: absolute;
+  color: #ff8400;
+  font-size: 3rem;
+  left: 91%;
+  top: -10%;
+}
+
+/*상품 선택*/
+.shop_info {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.shop_detail_img {
+  width: 40%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.shop_detail_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop_text {
+  margin-left: 2rem;
+}
+
+.shop_bread_list {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.shop_bread_item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ff8400;
+  border-radius: 20px;
+}
+
+.shop_bread_img {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.shop_bread_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bread_info {
+  padding: 2rem;
+}
+
+.sale_place {
+  margin-top: .8rem;
+  background: rgba(0, 0, 0, .1);
+  padding: .8rem;
+  border-radius: 998999px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sale_input {
+  margin-top: 1rem;
+}
+
+.sale_input input {
+  width: 63%;
+}
+
+.sale_input button {
+  width: 35%;
+}
+
+/*.카트*/
+.cart_box {
+  width: 80%;
+  height: 150px;
+  overflow: scroll;
+}
+
+.cart_box table {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cart_box thead th {
+  padding: .5rem;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #f4f5fc;
+}
+
+.cart_box tbody {
+  width: 100%;
+  text-align: center;
+}
+
+.cart_box tbody td {
+  padding: .5rem;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.history_list {
+  margin-top: 2rem;
+}
+
+.table_column {
+  width: 100%;
+}
+
+.table_column div {
+  width: 20%;
+  padding: .5rem;
+  background: #f4f5fc;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.order_table {
+  width: 100%;
+  height: 300px;
+  overflow: auto; 
+}
+
+.table_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.table_info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.table_info > div {
+  width: 20%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.table_info div > p {
+  padding: .3rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.multiitem > p {
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.order_state > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*상품관리*/
+.product_list {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.product_item {
+  width: 100%;
+  height: 100%;
+}
+
+.product_img {
+  width: 100%;
+  height: 80%;
+}
+
+.product_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
