@@ -1,6 +1,9 @@
 ## web-project
 기능경기대회를 준비하며 제작한 과제입니다.
 
+### [2022충북](https://github.com/jyh08024/web-project/tree/main/2022%EB%85%84%EB%8F%84/%EC%A0%84%EA%B5%AD/%EC%B6%A9%EB%B6%81) 
+       주요기능 : 퍼즐게임, 커뮤니티 시스템 제작
+
 ### [2022전남](https://github.com/jyh08024/web-project/tree/main/2022%EB%85%84%EB%8F%84/%EC%A0%84%EA%B5%AD/%EC%A0%84%EB%82%A8) 
        주요기능 : 360도 파노라마 이미지뷰어, Radar차트 구현, 커뮤니티 시스템 제작
        
