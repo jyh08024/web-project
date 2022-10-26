@@ -1,0 +1,537 @@
+{
+		"한국화" : {
+			"KO-2653" : {
+				"name" : "고일웅",
+				"art_name" : "시장사람들",
+				"price" : "100000",
+				"product_img" : "고일웅_시장사람들.jpg",
+				"description" : "준비중"
+			},
+			"KO-2721" : {
+				"name" : "김기창",
+				"art_name" : "일경매화향운만지반창화영월농사",
+				"price" : "150000",
+				"product_img" : "김기창_일경매화.jpg",
+				"description" : "한줄기 매화는 향기가 구름처럼 땅에 가득하고 반쯤 열린 꽃그림은 달빛에 은은하구나"
+			},
+			"KO-2342" : {
+				"name" : "김수길",
+				"art_name" : "作品 9004",
+				"price" : "150000",
+				"product_img" : "김수길_作品 9004.png",
+				"description" : "준비중"
+			},
+			"KO-2735" : {
+				"name" : "김은호",
+				"art_name" : "作品 9004",
+				"price" : "100000",
+				"product_img" : "김은호_이태백 취수.jpg",
+				"description" : "준비중"
+			},
+			"KO-2817" : {
+				"name" : "김화경",
+				"art_name" : "미상",
+				"price" : "100000",
+				"product_img" : "김화경, 미상.jpg",
+				"description" : "준비중"
+			},
+			"KO-2336" : {
+				"name" : "남정 박노수",
+				"art_name" : "기마도",
+				"price" : "100000",
+				"product_img" : "남정_박노수.png",
+				"description" : "동정호에서 서쪽을 보면 초강은 나누어 있고, 남쪽을 보면 구름도 보이지 않네. 해 질 무렵 백사장엔 가을빛이 펼쳐지고 어느 곳에서 상군을 조상할까..?"
+			},
+			"KO-2469" : {
+				"name" : "류회민",
+				"art_name" : "터널",
+				"price" : "100000",
+				"product_img" : "류회민_터널.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2726" : {
+				"name" : "박노수",
+				"art_name" : "미상",
+				"price" : "100000",
+				"product_img" : "박노수 미상.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2818" : {
+				"name" : "박노수",
+				"art_name" : "월하취적도",
+				"price" : "100000",
+				"product_img" : "박노수_월하취적도1.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2795" : {
+				"name" : "백윤문",
+				"art_name" : "미상",
+				"price" : "100000",
+				"product_img" : "백윤목_미상.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2737" : {
+				"name" : "소정 변관식",
+				"art_name" : "오륙도 전경",
+				"price" : "100000",
+				"product_img" : "소정_변관식.jpg",
+				"description" : "준비중"
+			},
+			"KO-2481" : {
+				"name" : "엄성관",
+				"art_name" : "아심비석불가전야",
+				"price" : "100000",
+				"product_img" : "엄성관 소.jpg",
+				"description" : "내 마음이 둘이 아니어서 굴릴 수 없다. 의지가 굳어서 쉽게 굴리지 않는다. 즉 바위는 굴릴 수 있지만 내 마음은 워낙 단단해서 지조를 지겠다. 그 강한 힘을 황소로 비유함."
+			},
+			"KO-2736" : {
+				"name" : "유천 김화경",
+				"art_name" : "연날리기",
+				"price" : "100000",
+				"product_img" : "유천_김화경.jpg",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2334" : {
+				"name" : "유산 민경갑",
+				"art_name" : "향원익청",
+				"price" : "100000",
+				"product_img" : "민경갑_향원익청1.png",
+				"description" : "향기는 멀리까지 가고 맑음은 더하구나"
+			},
+			"KO-2483" : {
+				"name" : "이규옥",
+				"art_name" : "소와 목동",
+				"price" : "100000",
+				"product_img" : "이규옥_소와 목동.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2815" : {
+				"name" : "이석우",
+				"art_name" : "환",
+				"price" : "100000",
+				"product_img" : "이석우_농악(19한-2815).png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2814" : {
+				"name" : "이석우",
+				"art_name" : "호춘",
+				"price" : "100000",
+				"product_img" : "이석우_화조도.png",
+				"description" : "봄을 노래하다."
+			},
+			"KO-2843" : {
+				"name" : "이석우",
+				"art_name" : "피난길",
+				"price" : "100000",
+				"product_img" : "이석우-피난길.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2816" : {
+				"name" : "이양원",
+				"art_name" : "풍물놀이",
+				"price" : "100000",
+				"product_img" : "이양원, 풍물놀이.jpg",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-28109" : {
+				"name" : "이유태",
+				"art_name" : "미상",
+				"price" : "100000",
+				"product_img" : "이유태, 미상.jpg",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2720" : {
+				"name" : "장우성",
+				"art_name" : "낙조일경",
+				"price" : "100000",
+				"product_img" : "장우성_낙조일경.jpg",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2472" : {
+				"name" : "정재호",
+				"art_name" : "청운동 기념비",
+				"price" : "100000",
+				"product_img" : "정재호 소용량.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"KO-2437" : {
+				"name" : "최명영",
+				"art_name" : "Conditional Planes 8308",
+				"price" : "100000",
+				"product_img" : "정재호 소용량.png",
+				"description" : "평면조건 8308(Conditional Planes 8308)(1983)은 먹물로 한지 전면을 검게 물들인 뒤, 한지 뒤에서 솔로 두드려 화면 위에 마티에르를 표현한 작품이다."
+			}
+		},
+
+		
+		"회화" : {
+			"PA-2918" : {
+				"name" : "김남배",
+				"art_name" : "부산 풍경",
+				"price" : "100000",
+				"product_img" : "김남배, 부산 풍경(1).png",
+				"description" : "<부산 풍경>은 초기 부산화단의 특징인 인상주의와 표현주의적 화풍과 1950년대 말 김남배가 심취한 동양의 수묵화적 화풍을 나타낸다"
+			},
+			"PA-2887" : {
+				"name" : "김동규",
+				"art_name" : "대안",
+				"price" : "150000",
+				"product_img" : "김동규, 대안1.png",
+				"description" : "천과 염료를 이용한 번지기 기법을 사용했으며 전체 이미지는 인체 형상으로 서로 상호간의 무언의 대화를 상징하는 대안으로 순간 상황내면 표출이다."
+			},
+			"PA-2920" : {
+				"name" : "김미애",
+				"art_name" : "게임",
+				"price" : "150000",
+				"product_img" : "김미애, 게임(1).png",
+				"description" : "준비중"
+			},
+			"PA-2896" : {
+				"name" : "김영덕",
+				"art_name" : "역사의 거울 앞에서",
+				"price" : "100000",
+				"product_img" : "김영덕, 역사의 거울 앞에서.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"PA-2924" : {
+				"name" : "김은주",
+				"art_name" : "얼굴",
+				"price" : "100000",
+				"product_img" : "김은주, 얼굴.png",
+				"description" : "인체를 주로 그려온 작가가 그린 자화상이다"
+			},
+			"PA-2926" : {
+				"name" : "김춘자",
+				"art_name" : "생",
+				"price" : "100000",
+				"product_img" : "김춘자, 생.png",
+				"description" : "식물이나 동물, 곤충들이 경계 없이 혼재된 형상으로 자연의 미분화 지점에서의 원초적 생명력을 표현하고자 했다."
+			},
+			"PA-2928" : {
+				"name" : "박경인",
+				"art_name" : "큰 종이호랑이",
+				"price" : "100000",
+				"product_img" : "박경인, 큰 종이호랑이(3).png",
+				"description" : "불화의 시대와 그 땅 위에서 살아가는, 그럼에도 불구하고 강한 생명력으로 살아가는 사람들의 이야기를 형상화 한 작품이다."
+			},
+			"PA-2929" : {
+				"name" : "박병제",
+				"art_name" : "40계단",
+				"price" : "100000",
+				"product_img" : "박병제, 40계단.png",
+				"description" : "낡고 오래된 작은 집들, 경사진 골목과 계단은 지정학적 문제를 넘어 도시의 내면 그리고 우리 내면의 문제가 무엇인지 묻는다."
+			},
+			"PA-2930" : {
+				"name" : "박춘재",
+				"art_name" : "도시의 이야기1",
+				"price" : "100000",
+				"product_img" : "박춘재, 도시의 이야기1.png",
+				"description" : "강렬한 색으로 건물의 윤곽을 두른 미세하게 굽은 선의 표현이 돋보이는 작품으로 선이 가지는 운율적 조형성을 이용하였다."
+			},
+			"PA-2931" : {
+				"name" : "예유근",
+				"art_name" : "갇힌 호랑이",
+				"price" : "100000",
+				"product_img" : "예유근, 갇힌 호랑이(2).png",
+				"description" : "우리 전통적 정신의 기반인 산신령마저도 가두어 버린 시대. 변화하는 서구의 회화 이론과 동시대에 대한 격렬한 고민을 닫힌 창을 통해 들여다보고, 열리기를 기대하는 삶의 표정으로 새로운 기법의 회화적 표현 회복에 집중했다."
+			},
+			"PA-2932" : {
+				"name" : "오영재",
+				"art_name" : "영도",
+				"price" : "100000",
+				"product_img" : "오영재, 영도.png",
+				"description" : "자연이 지닌 절대적 통일성을 조형적으로 재구성함으로써 객관적 응시에 대한 자신의 자각을 표현했다."
+			},
+			" PA-2886" : {
+				"name" : "이건용",
+				"art_name" : "달팽이 걸음-2019",
+				"price" : "100000",
+				"product_img" : "이건용.png",
+				"description" : "준비중"
+			},
+			"PA-2935" : {
+				"name" : "정복수",
+				"art_name" : "고독을 소독하는 사람",
+				"price" : "100000",
+				"product_img" : "정복수, 고독을 소독하는 사람(2).png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"PA-2937" : {
+				"name" : "최석운",
+				"art_name" : "낮잠",
+				"price" : "100000",
+				"product_img" : "최석운_낮잠.png",
+				"description" : "준비중"
+			},
+			" PA-2898" : {
+				"name" : "최아자",
+				"art_name" : "희망",
+				"price" : "100000",
+				"product_img" : "최아자, 희망(2).png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"PA-2939" : {
+				"name" : "하인두",
+				"art_name" : "해조음",
+				"price" : "100000",
+				"product_img" : "하인두, 해조음.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"PA-2916" : {
+				"name" : "이석우",
+				"art_name" : "쌍매듭 (Ed. 2/10)",
+				"price" : "100000",
+				"product_img" : "한운성, 쌍매듭.png",
+				"description" : "준비중"
+			},
+			"PA-2940" : {
+				"name" : "허찬미",
+				"art_name" : "작은 다윗",
+				"price" : "100000",
+				"product_img" : "허찬미, 작은 다윗.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			}
+		},
+
+		"공예" : {
+			"CR-0791" : {
+				"name" : "강창원",
+				"art_name" : "자개함",
+				"price" : "100000",
+				"product_img" : "강창원.jpg",
+				"description" : "뚜껑과 본체 등 2개의 단위로 분리되는 함으로 뚜껑 전면에 회화적인 느낌의 산수풍경을 자개를 사용하여 배치시킨 작업으로 안정된 구도와 함께 현대적인 미감을 조화시킨 공예작업이다."
+			},
+			"CR-0792" : {
+				"name" : "권상오",
+				"art_name" : "주칠석목건칠-호",
+				"price" : "150000",
+				"product_img" : "권상오.jpg",
+				"description" : "준비중"
+			},
+			"CR-0425" : {
+				"name" : "김상호",
+				"art_name" : "무제",
+				"price" : "150000",
+				"product_img" : "김상호.png",
+				"description" : "세라믹을 중심기법으로 하며 그 표현성만을 고려하여 최대한 자유롭게 접근 시도한 작업이다."
+			},
+			"CR-1745" : {
+				"name" : "김성수",
+				"art_name" : "체스트 -2007 공존",
+				"price" : "100000",
+				"product_img" : "김성수.jpg",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"CR-2054" : {
+				"name" : "박무봉",
+				"art_name" : "도시",
+				"price" : "100000",
+				"product_img" : "박무봉_도시1.png",
+				"description" : "준비중"
+			},
+			"CR-0406" : {
+				"name" : "박수철",
+				"art_name" : "형성87-2",
+				"price" : "100000",
+				"product_img" : "박수철.jpg",
+				"description" : "사각 프레임 안의 사각, 사각의 중첩과 사각의 병치, 평면과 부조적 입체감을 나타내는 등 그의 작업은 주로 사각 사이의 조형적 배려로 이루어져 있다."
+			},
+			"CR-0404" : {
+				"name" : "송번수",
+				"art_name" : "절망과 가능성",
+				"price" : "100000",
+				"product_img" : "송번수.jpg",
+				"description" : "준비중"
+			},
+			"CR-2045" : {
+				"name" : "신상호",
+				"art_name" : "Structure & Force-Horse",
+				"price" : "100000",
+				"product_img" : "신상호-Horse_좌.jpg",
+				"description" : "동물의 형상과 건축적인 구조를 결합시킨 작품이다."
+			},
+			"CR-1289" : {
+				"name" : "오구환",
+				"art_name" : "生動(생동)",
+				"price" : "100000",
+				"product_img" : "오구환.jpg",
+				"description" : "준비중"
+			},
+			"CR-2369" : {
+				"name" : "오천학",
+				"art_name" : "陶碑(도비)",
+				"price" : "100000",
+				"product_img" : "오천학_陶碑(도비).png",
+				"description" : "준비중"
+			},
+			"CR-0291" : {
+				"name" : "왕경애",
+				"art_name" : "즉흥 99-02",
+				"price" : "100000",
+				"product_img" : "왕경애.jpg",
+				"description" : "자연이 지닌 절대적 통일성을 조형적으로 재구성함으로써 객관적 응시에 대한 자신의 자각을 표현했다."
+			},
+			"CR-0437" : {
+				"name" : "유재구",
+				"art_name" : "불립문자",
+				"price" : "100000",
+				"product_img" : "유재구.jpg",
+				"description" : "고려닥을 이용해서 작픔이 바탕을 넘나들고 그 위에 다시 염색한 펄프를 올리는 방법으로, 작업의 주 과정을 삼고 있다."
+			},
+			"CR-2060" : {
+				"name" : "윤필남",
+				"art_name" : "beyond",
+				"price" : "100000",
+				"product_img" : "윤필남_beyond1.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"CR-0794" : {
+				"name" : "이동일",
+				"art_name" : "과기(菓器)",
+				"price" : "100000",
+				"product_img" : "이동일_과기(菓器)1.png",
+				"description" : "준비중"
+			},
+			"CR-0955" : {
+				"name" : "진영섭",
+				"art_name" : "밀월여행",
+				"price" : "100000",
+				"product_img" : "진영섭.jpg",
+				"description" : "물고기형상에 성형기법이 이용된 작품이다."
+			}
+		},
+
+
+		"조각" : {
+			"SC-2822" : {
+				"name" : "강태훈",
+				"art_name" : "새들은 더 이상 노래하지 않는다",
+				"price" : "100000",
+				"product_img" : "강태훈_새들은 더 이상 노래하지 않는다(전체 파노라마)_2010.jpg",
+				"description" : "사회에서 일어난 문제적 사건들을 상징적 오브제로 구현한 설치작품이다"
+			},
+			"SC-2788" : {
+				"name" : "김성진",
+				"art_name" : "Prototype-107B",
+				"price" : "150000",
+				"product_img" : "김성진_Prototype-107B.png",
+				"description" : "준비중"
+			},
+			"SC-2827" : {
+				"name" : "김인배",
+				"art_name" : "겐다로크",
+				"price" : "150000",
+				"product_img" : "김인배_겐다로크.png",
+				"description" : "일반적인 기념비 형태의 좌대 위에 흉상이 있다. 흉상의 얼굴이 중심에서 좌우 양쪽으로 분화된 형태를 보여준다"
+			},
+			"SC-2856" : {
+				"name" : "김정명",
+				"art_name" : "유리창을 통한 프레임만들기",
+				"price" : "100000",
+				"product_img" : "김정명.png",
+				"description" : "초기 실험 작업부터 사용된 액자 프레임은 창문 프레임으로 확장되는데, 세상을 바라보고 관찰하기 위한 특정한 관점을 의미하는 프레임은 기존의 사물이나 현상에 대한 새로운 시각을 의미한다."
+			},
+			"SC-2850" : {
+				"name" : "김청정",
+				"art_name" : "거울에 머문 바람",
+				"price" : "100000",
+				"product_img" : "김정명.png",
+				"description" : "철 육면체 틀 안에 비닐 물주머니를 매달고 바닥에 거울을 놓아 사물과 공간과의 유기적인 관계를 개념화시킨 작품이다. "
+			},
+			"SC-2784" : {
+				"name" : "양혜규",
+				"art_name" : "솔 르윗 뒤집기- 8배로 축소된, 셋x넷x셋",
+				"price" : "100000",
+				"product_img" : "양혜규.png",
+				"description" : "블라인드 입방체로 모형화된 본 작품은 시시각각 변화하는 빛이 백색 블라인드와 조우하며 생동감 있는 색의 울림과 해방감을 느낄 수 있게 하는 작품이다."
+			},
+			"SC-2783" : {
+				"name" : "윤석남",
+				"art_name" : "108",
+				"price" : "100000",
+				"product_img" : "윤석남.png",
+				"description" : "소외된 존재들에 대한 작가의 애정과 관심이 묻어나는 조각 작품이다."
+			},
+			"SC-2786" : {
+				"name" : "윤희",
+				"art_name" : "Spherique",
+				"price" : "100000",
+				"product_img" : "윤희 소용량.png",
+				"description" : "준비중"
+			},
+			"SC-2825" : {
+				"name" : "이병호",
+				"art_name" : "Prayer",
+				"price" : "100000",
+				"product_img" : "이병호_Prayer.png",
+				"description" : "에어 컴프레셔의 공기 주입에 따라 수축과 팽창을 반복하는 실리콘으로 제작된다."
+			},
+			"SC-2779" : {
+				"name" : "이종빈",
+				"art_name" : "공원",
+				"price" : "100000",
+				"product_img" : "이종빈.jpg",
+				"description" : "준비중"
+			},
+			"SC-2821" : {
+				"name" : "이창운",
+				"art_name" : "편도여행",
+				"price" : "100000",
+				"product_img" : "이창운 (1).jpg",
+				"description" : "레일 위에는 금방 깨질 것 같으면서도 견고한 달걀이 줄지어 움직인다. 그가 보여주는 특별할것 없는 반복된 달걀의 움직임은 보는 이로 하여금 각자의 일상을 환기한다."
+			},
+			"SC-2936" : {
+				"name" : "정철교",
+				"art_name" : "인형-나의 긴 붓으로",
+				"price" : "100000",
+				"product_img" : "정철교- 인형- 나의 긴 붓으로 (1).png",
+				"description" : "준비중"
+			},
+			"SC-2787" : {
+				"name" : "정혜련",
+				"art_name" : "Abstract time",
+				"price" : "100000",
+				"product_img" : "정혜련 소용량.png",
+				"description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum porro eligendi odit, illo rem vel alias sint tenetur labore, modi, similique nam eaque quis natus cupiditate esse at cum."
+			},
+			"SC-2782" : {
+				"name" : "최만린",
+				"art_name" : "태(placenta) 80-27 (Ed.0)",
+				"price" : "100000",
+				"product_img" : "최만린 소용량.png",
+				"description" : "준비중"
+			},
+			"SC-2938" : {
+				"name" : "최정화",
+				"art_name" : "공주님의자+메이드인 코리아",
+				"price" : "100000",
+				"product_img" : "최정화, 공주님의자+메이드인 코리아.png",
+				"description" : "흔히 볼 수 있는 플라스틱 의자의 외형을 가진 작품으로, 마치 제프 쿤스의 ‘풍선 강아지’처럼 고혹적인 색상을 띄며 반짝인다."
+			},
+			"SC-2824" : {
+				"name" : "홍명섭",
+				"art_name" : "1995~2016년",
+				"price" : "100000",
+				"product_img" : "홍명섭_탈제.jpeg",
+				"description" : "흔히 볼 수 있는 플라스틱 의자의 외형을 가진 작품으로, 마치 제프 쿤스의 ‘풍선 강아지’처럼 고혹적인 색상을 띄며 반짝인다."
+			}
+		},
+
+
+		"서예" : {
+			"CA-0278" : {
+				"name" : "(석불)정기호",
+				"art_name" : "현우현현판,정각",
+				"price" : "100000",
+				"product_img" : "정기호.jpg",
+				"description" : "석불 글, 아들 목불 새김"
+			},
+			"CA-0277" : {
+				"name" : "해암",
+				"art_name" : "반야심경",
+				"price" : "150000",
+				"product_img" : "해암.jpg",
+				"description" : "준비중"
+			}
+		}		
+}

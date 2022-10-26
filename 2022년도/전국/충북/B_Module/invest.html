@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body class="pr">
+  <input type="checkbox" name="login_layer" id="login_layer" hidden>
+  <header>
+    <div class="header_rap">
+      <div class="logo">
+        <a href="index.html">
+          <img src="resources/logo.png" alt="logo" title="logo">
+        </a>
+      </div>
+      <div>
+        <ul class="menu">
+          <li class="main_menu">
+            <input type="checkbox" name="menu_1" id="menu_1" hidden>
+            <label for="menu_1">
+              <i class="fa fa-list"></i> 이용안내
+              <span class="m_icon menu_icon_plus">[<i class="fa fa-plus"></i>]</span>
+              <span class="m_icon menu_icon_minus">[<i class="fa fa-minus"></i>]</span>
+            </label>
+
+            <ul class="sub_menu">
+              <li><a href="#">관람안내</a></li>
+              <li><a href="#">정원안내</a></li>
+            </ul>
+          </li>
+          <li class="main_menu">
+            <input type="checkbox" name="menu_2" id="menu_2" hidden>
+            <label for="menu_2">
+              <i class="fa fa-calendar-check-o"></i> 작업실임대
+              <span class="m_icon menu_icon_plus">[<i class="fa fa-plus"></i>]</span>
+              <span class="m_icon menu_icon_minus">[<i class="fa fa-minus"></i>]</span>
+            </label>
+
+            <ul class="sub_menu">
+              <li><a href="#">임대현황</a></li>
+              <li><a href="#">임대등록</a></li>
+            </ul>
+          </li>
+          <li class="main_menu">
+            <input type="checkbox" name="menu_3" id="menu_3" hidden>
+            <label for="menu_3">
+              <i class="fa fa-chain"></i> 청년작가지원
+              <span class="m_icon menu_icon_plus">[<i class="fa fa-plus"></i>]</span>
+              <span class="m_icon menu_icon_minus">[<i class="fa fa-minus"></i>]</span>
+            </label>
+
+            <ul class="sub_menu">
+              <li><a href="/signList.html">투자목록보기</a></li>
+              <li><a href="/invest.html">투자하기</a></li>
+              <li><a href="#">펀드보기</a></li>
+              <li><a href="/enr.html">청년작가등록</a></li>
+            </ul>
+          </li>
+          <li class="main_menu">
+            <input type="checkbox" name="menu_4" id="menu_4" hidden>
+            <label for="menu_4">
+              <i class="fa fa-image"></i> 작품판매
+              <span class="m_icon menu_icon_plus">[<i class="fa fa-plus"></i>]</span>
+              <span class="m_icon menu_icon_minus">[<i class="fa fa-minus"></i>]</span>
+            </label>
+
+            <ul class="sub_menu">
+              <li><a href="#">작품목록</a></li>
+              <li><a href="#">작품등록</a></li>
+              <li><a href="#">작품관리</a></li>
+              <li><a href="#">장바구니</a></li>
+            </ul>
+          </li>
+          <li class="main_menu">
+            <label href="#"><i class="fa fa-calendar"></i> 이벤트</label>
+          </li>
+          <li class="main_menu">
+            <label>
+              <a href="/partici.html"> 참여하기</a>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="header_bottom">
+        <label for="login_layer" class="btn"><i class="fa fa-users"></i> 로그인</label>
+      </div>
+    </div>
+  </header>
+
+  <div class="visual sub_visual flex alc pr">
+    <div class="wrap flex js">
+      <div class="vs_text">
+        <p class="vs_top">비주얼</p>
+        <p class="pr bold vs_main">이한메미술관</p>
+        <div class="address">
+          <p><i class="fa fa-map-marker"></i> 경상남도 가창군 북상면 소정리</p>
+        </div>
+
+        <p class="vs_cont">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque, obcaecati libero sequi praesentium,
+          voluptas perferendis ex corrupti molestias nemo eum sint adipisci, neque hic suscipit explicabo dicta ipsum
+          cumque.
+        </p>
+      </div>
+    </div>
+    <img class="pa visual_back" src="resources/images/image13.jpg" alt="visual" title="visual">
+  </div>
+
+  <div style="padding-top: 6.2rem;">
+    <div class="wrap">
+      <div class="section_title sub_section_title pr">
+        <p class="bold">투자하기</p>
+      </div>
+
+      <div class="section_content">
+        <div class="invest_list">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layer_popup login_popup">
+    <div class="popup_title">
+      <h2>로그인</h2>
+      <label for="login_layer" class="popup_close"><i class="fa fa-times-circle"></i></label>
+    </div>
+
+    <div class="after_line"></div>
+
+    <form class="login_form">
+      <ul>
+        <li>아이디</li>
+        <li><input type="text" class="input" name="id"></li>
+      </ul>
+      <ul>
+        <li>암호</li>
+        <li><input type="password" class="input" name="password"></li>
+      </ul>
+
+      <div class="after_line"></div>
+
+      <button class="btn">로그인</button>
+    </form>
+  </div>
+
+  <div class="modal"></div>
+
+  <template>
+    <div class="popup invest_popup">
+      <div class="popup_title">
+        <h2>투자계약서 작성</h2>
+        <div class="popup_close">
+          <i class="fa fa-times-circle"></i>
+        </div>
+      </div>
+
+      <div class="after_line"></div>
+
+      <div class="popup_content">
+        <form class="invest_sign">
+          <ul>
+            <li>투자번호</li>
+            <li><input type="text" class="input inv_in" name="inv_num" readonly></li>
+          </ul>
+          <ul>
+            <li>청년작가명</li>
+            <li><input type="text" class="input art_in" name="artist_name" readonly></li>
+          </ul>
+          <ul>
+            <li>투자자명</li>
+            <li><input type="text" class="input" name="invester_name"></li>
+          </ul>
+          <ul>
+            <li>투자금액</li>
+            <li><input type="text" class="input val_in" name="invest_val"></li>
+          </ul>
+          <ul>
+            <li>서명란</li>
+            <li>
+              <canvas id="sign" width="200" height="150" style="border: 1px solid rgba(0, 0, 0, .1)"></canvas>
+              <input type="hidden" class="sign_ck">
+            </li>
+          </ul>
+          
+          <input type="hidden" name="inv_id">
+          <div class="after_line"></div>
+          
+          <button class="btn">제출하기</button>
+        </form>
+      </div>
+    </div>
+  </template>
+
+</body>
+</html>
