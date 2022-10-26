@@ -1,6 +1,15 @@
 ## web-project
 기능경기대회를 준비하며 제작한 과제입니다.
 
+### [2022전남](https://github.com/jyh08024/web-project/tree/main/2022%EB%85%84%EB%8F%84/%EC%A0%84%EA%B5%AD/%EC%A0%84%EB%82%A8) 
+       주요기능 : 360도 파노라마 이미지뷰어, Radar차트 구현, 커뮤니티 시스템 제작
+       
+### [2022서울](https://github.com/jyh08024/web-project/tree/main/2022%EB%85%84%EB%8F%84/%EC%A0%84%EA%B5%AD/%EC%84%9C%EC%9A%B8) 
+       주요기능 : canvas 영수증, 식당예약 시스템
+
+### [2022경기도](https://github.com/jyh08024/web-project/tree/main/2022%EB%85%84%EB%8F%84/%EC%A0%84%EA%B5%AD/%EA%B2%BD%EA%B8%B0) 
+       주요기능 : 360파노라마 이미지뷰어, 방문예약, 커뮤니티 시스템 제작 
+
 ### [2022 - 특산품 홍보, 관리](https://github.com/jyh08024/web-project/tree/main/2022%EB%85%84%EB%8F%84/%EC%A7%80%EB%B0%A9) 
        주요기능 : 카드 뒤집기 게임, REST API를 사용한 구동, REST 방식의 API제작과 제공
 
