@@ -1,0 +1,207 @@
+﻿{
+  "data": [
+    {
+      "category": "인기체험관",
+      "Image": "1.jpg",
+      "parkName": "서동생활공원 인기1",
+      "creator": "서동생활공원",
+      "period": "2022.7.13 ~ 2022.9.12"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "2.jpg",
+      "parkName": "서동생활공원 인기2",
+      "creator": "서동생활공원",
+      "period": "2022.8.13 ~ 2022.10.12"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "3.jpg",
+      "parkName": "서동생활공원 추천1",
+      "creator": "서동생활공원",
+      "period": "2022.8.20 ~ 2022.10.19"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "4.jpg",
+      "parkName": "서동생활공원 신규1",
+      "creator": "서동생활공원",
+      "period": "2022.8.20 ~ 2022.10.19"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "5.jpg",
+      "parkName": "서동생활공원 신규2",
+      "creator": "서동생활공원",
+      "period": "2022.7.13 ~ 2022.9.12"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "6.jpg",
+      "parkName": "서동생활공원 신규3",
+      "creator": "서동생활공원",
+      "period": "2022.8.27 ~ 2022.10.26"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "7.jpg",
+      "parkName": "서동생활공원 신규4",
+      "creator": "서동생활공원",
+      "period": "2022.8.20 ~ 2022.10.19"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "8.jpg",
+      "parkName": "서동생활공원 인기3",
+      "creator": "민낯",
+      "period": "2022.7.27 ~ 2022.9.26"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "9.jpg",
+      "parkName": "서동생활공원 인기4",
+      "creator": "서동생활공원",
+      "period": "2022.8.27 ~ 2022.10.26"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "10.jpg",
+      "parkName": "서동생활공원 신규5",
+      "creator": "서동생활공원",
+      "period": "2022.8.10 ~ 2022.10.9"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "11.jpg",
+      "parkName": "서동생활공원 인기4",
+      "creator": "서동생활공원",
+      "period": "2022.7.10 ~ 2022.11.9"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "12.jpg",
+      "parkName": "서동생활공원 추천2",
+      "creator": "서동생활공원",
+      "period": "2022.6.1 ~ 2022.10.31"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "13.jpg",
+      "parkName": "서동생활공원 인기5",
+      "creator": "서동생활공원",
+      "period": "2022.7.10 ~ 2022.11.9"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "14.jpg",
+      "parkName": "서동생활공원 신규6",
+      "creator": "서동생활공원",
+      "period": "2022.7.10 ~ 2022.11.9"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "15.jpg",
+      "parkName": "서동생활공원 신규7",
+      "creator": "서동생활공원",
+      "period": "2022.6.1 ~ 2022.10.31"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "16.jpg",
+      "parkName": "서동생활공원 인기6",
+      "creator": "서동생활공원",
+      "period": "2022.8.1 ~ 2022.10.31"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "17.jpg",
+      "parkName": "서동생활공원 추천3",
+      "creator": "서동생활공원",
+      "period": "2022.8.10 ~ 2022.10.9"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "18.jpg",
+      "parkName": "서동생활공원 추천3",
+      "creator": "서동생활공원",
+      "period": "2022.7.27 ~ 2022.9.26"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "19.jpg",
+      "parkName": "서동생활공원 추천4",
+      "creator": "서동생활공원",
+      "period": "2022.8.25 ~ 2022.9.24"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "20.jpg",
+      "parkName": "서동생활공원 추천5",
+      "creator": "서동생활공원",
+      "period": "2022.8.1 ~ 2022.10.31"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "21.jpg",
+      "parkName": "서동생활공원 추천6",
+      "creator": "서동생활공원",
+      "period": "2022.8.10 ~ 2022.10.9"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "22.jpg",
+      "parkName": "서동생활공원 추천7",
+      "creator": "서동생활공원",
+      "period": "2022.8.27 ~ 2022.10.26"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "23.jpg",
+      "parkName": "서동생활공원 추천8",
+      "creator": "서동생활공원",
+      "period": "2022.8.25 ~ 2022.9.24"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "24.jpg",
+      "parkName": "서동생활공원 신규8",
+      "creator": "서동생활공원",
+      "period": "2022.7.10 ~ 2022.11.9"
+    },
+    {
+      "category": "추천체험관",
+      "Image": "25.jpg",
+      "parkName": "서동생활공원 추천9",
+      "creator": "서동생활공원",
+      "period": "2022.7.10 ~ 2022.11.9"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "26.jpg",
+      "parkName": "서동생활공원 신규8",
+      "creator": "서동생활공원",
+      "period": "2022.8.27 ~ 2022.10.26"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "27.jpg",
+      "parkName": "서동생활공원 인기7",
+      "creator": "서동생활공원",
+      "period": "2022.8.15 ~ 2022.10.3"
+    },
+    {
+      "category": "인기체험관",
+      "Image": "28.jpg",
+      "parkName": "서동생활공원 인기8",
+      "creator": "서동생활공원",
+      "period": "2022.7.29 ~ 2022.9.30"
+    },
+    {
+      "category": "신규체험관",
+      "Image": "29.jpg",
+      "parkName": "서동생활공원 신규9",
+      "creator": "서동생활공원",
+      "period": "2022.8.10 ~ 2022.10.9"
+    }
+  ]
+}

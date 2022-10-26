@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 스타일 파일 로드 -->
+  <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+
+  <!-- 헤더영역 -->
+  <header>
+    <div class="header_rap wrap flex alc js">
+      <!-- 로고 -->
+      <div class="logo">
+        <a href="#">
+          <img src="resources/logo.png" alt="logo" title="logo">
+        </a>
+      </div>
+
+      <!-- 메뉴 -->
+      <ul class="menu">
+        <li><a href="#">정원 정보</a></li>
+        <li><a href="#">버스킹</a></li>
+        <li><a href="sub.html">관람/체험</a></li>
+        <li><a href="#">마이페이지</a></li>
+      </ul>
+
+      <!-- 버튼 -->
+      <div class="user_btn">
+        <button class="btn"><i class="fa fa-user-plus"></i> 로그인</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 햄버거 메뉴 구현 -->
+  <input type="checkbox" name="ham_open" id="ham_open" hidden>
+  <label for="ham_open" id="ham_full" class="ham_con"></label>
+
+  <div class="ham_btn ham_con">
+    <label for="ham_open" class="flex alc jc">
+      <i class="fa fa-bars"></i>
+    </label>
+  </div>
+
+  <div class="ham_con ham">
+    <ul class="menu">
+      <li><a href="#">정원 정보</a></li>
+      <li><a href="#">버스킹</a></li>
+      <li><a href="#">관람/체험</a></li>
+      <li><a href="#">마이페이지</a></li>
+    </ul>
+
+    <div class="user_btn">
+      <button class="btn"><i class="fa fa-user-plus"></i> 로그인</button>
+    </div>
+  </div>
+
+  <div class="section"></div>
+  <div class="section wrap">
+    <div class="flex">
+      <div class="section_title ani">
+        <p>Sub</p>
+        <h2>다양한</h2>
+        <h2>관람/체험 페이지</h2>
+      </div>
+    </div>
+
+    <div class="intro_items sub_intro">
+      <h2>정원 버스킹 안내</h2>
+
+      <div class="after_line"></div>
+
+      <div class="intro_list">
+        <div class="intro_item">
+          <div class="intro_top flex alc js">
+            <h2 class="color">1. 소개</h2>
+            <p>Lorem Ipsum</p>
+          </div>
+
+          <div class="intro_text">
+            <p class="bold">"2022 경남 정원 버스킹!" </p>
+            <p class="small">2022년부터 시작하는 각 정원의 색다르고 다양한 버스킹!</p>
+            <p class="read_more">Read More</p>
+          </div>
+        </div>
+        <div class="intro_item">
+          <div class="intro_top flex alc js">
+            <h2 class="color">2. 정보</h2>
+            <p>Lorem Ipsum</p>
+          </div>
+
+          <div class="intro_text">
+            <p class="bold">볼거리와 정원의 풍경을 동시에 누릴 수 있는  아름다운 정원으로 당신을 초대합니다.  </p>
+            <p class="small">기타, 피아노, 보컬 등 여러 분야의 다양한 버스킹을 신청 또는 관람 하세요! 자세한 일정은 각 정원의 상세페이지에서 확인 바랍니다.</p>
+            <p class="read_more">Read More</p>
+          </div>
+        </div>
+        <div class="intro_item intro_img">
+          <img src="resources/img/40.jpg" alt="intro" title="intro">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section wrap">
+    <div class="sub_visual">
+      <div class="sub_visual_text">
+        <h2>정원 리스트 영역</h2>
+        <p>원하는 정원을 리스트에서 찾아보세요.</p>
+
+        <div class="search_box flex alc js">
+          <div class="search_input">
+            <i class="fa fa-search"></i>
+            <input type="text" id="search" name="search" placeholder="검색어를 입력해주세요.">
+          </div>
+
+          <button class="btn search_btn">검색</button>
+        </div> 
+      </div>
+      <img src="resources/img/25.jpg" alt="sub" title="sub">
+    </div>
+
+    <div class="garden_list">
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/물빛소리정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[물빛소리정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-3588-6453</p>
+            <p><span>[관리기관]</span> 물빛소리정원</p>
+            <p><span>[위치]</span> 통영시</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/통영동백커피식물원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[통영동백커피식물원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-3557-9634</p>
+            <p><span>[관리기관]</span> 통영동백커피식물원</p>
+            <p><span>[위치]</span> 통영시</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/해솔찬정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[해솔찬정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 055-643-0564</p>
+            <p><span>[관리기관]</span> 해솔찬정원</p>
+            <p><span>[위치]</span> 통영시</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/엄마의정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[엄마의정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-3884-1100</p>
+            <p><span>[관리기관]</span> 엄마의정원</p>
+            <p><span>[위치]</span> 밀양시</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/녹색교육정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[녹색교육정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-5574-7176</p>
+            <p><span>[관리기관]</span> 녹색교육정원</p>
+            <p><span>[위치]</span> 양산시</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/느티나무의사랑.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[느티나무의 사랑]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 055-912-5551</p>
+            <p><span>[관리기관]</span> 느티나무의 사랑</p>
+            <p><span>[위치]</span> 양산시</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/만년교정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[만년교정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-9431-2277</p>
+            <p><span>[관리기관]</span> 만년교정원</p>
+            <p><span>[위치]</span> 창녕군</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/그레이스정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[그레이스정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 055-673-1803</p>
+            <p><span>[관리기관]</span> 그레이스정원</p>
+            <p><span>[위치]</span> 고성군</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/토피어리정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[토피어리정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-2851-2978</p>
+            <p><span>[관리기관]</span> 토피어리정원</p>
+            <p><span>[위치]</span> 남해군</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/화계리정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[화계리정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 010-4074-6444</p>
+            <p><span>[관리기관]</span> 화계리정원</p>
+            <p><span>[위치]</span> 남해군</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/하미앙정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[하미앙정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 055-964-2500</p>
+            <p><span>[관리기관]</span> 하미앙정원</p>
+            <p><span>[위치]</span> 함양군</p>
+          </div>
+        </div>
+      </div>
+      <div class="garden_item">
+        <div class="garden_img">
+          <img src="resources/정원리스트/이수미팜베리정원.jpg" alt="garden" title="garden">
+        </div>
+
+        <div class="garden_text">
+          <h3>[이수미팜베리정원]</h3>
+
+          <div class="garden_bot">
+            <p><span>[전화번호]</span> 055-945-1789</p>
+            <p><span>[관리기관]</span> 이수미팜베리정원</p>
+            <p><span>[위치]</span> 거창군</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>정원 일정표</h2>
+
+    <div class="after_line"></div>
+  </div>
+
+  <!-- <input type="checkbox" name="notModal" id="not_modal" checked hidden> -->
+
+  <div class="not_modal">
+    <div class="modal_cont">
+      <div class="close_btn btn">
+        <label for="not_modal">
+          닫기
+        </label>
+      </div>
+
+      <div class="modal_t">
+        <h3>
+          "코로나19 시대, 모두를 위한 약속" <br>
+          거 리 두 기 <br>
+          2m
+        </h3>
+      </div>
+      <img src="resources/img/2.jpg" alt="not" title="not">
+    </div>
+  </div>
+
+  <div class="foo_ab">
+    <div class="foo_ab_t">
+      <h2>“</h2>
+      <br>
+      <p>
+        아름다운 자연이 모인곳, <br>
+        잘 가꾸어진 정원과 어우러지는 분위기, <br>
+        색다른 볼거리가 있는 아름다운 장소, <br>
+        이곳에 방문할 수 있어 좋았습니다.
+      </p>
+    </div>
+    <img src="resources/img/42.jpg" alt="foo" title="foo">
+  </div>
+
+  <footer>
+    <div class="foo_rap">
+      <div class="wrap">
+        <div class="foo_top flex alc js">
+          <div class="foo_menu flex alc">
+            <div><a href="#">이용안내</a></div>
+            <div><a href="#">개인정보 처리방침</a></div>
+            <div><a href="#">저작권 보호정책</a></div>
+            <div><a href="#">도로명 주소안내</a></div>
+            <div><a href="#">사이트오류 신고</a></div>
+          </div>
+  
+          <div class="foo_sns flex alc">
+            <div><a href="#"><i class="fa fa-instagram"></i></a></div>
+            <div><a href="#"><i class="fa fa-facebook-official"></i></a></div>
+            <div><a href="#"><i class="fa fa-linkedin"></i></a></div>
+            <div><a href="#"><i class="fa fa-twitter"></i></a></div>
+          </div>
+        </div>
+
+        <div class="foo_bot">
+          <div class="logo flex">
+            <a href="#">
+              <img src="resources/logo.png" alt="logo" title="logo">
+            </a>
+          </div>
+          <br>
+          <p class="copy">
+            전라남도 여수시 여문2로 148 <br>
+            COPYRIGHT ⓒ 2022 YEOSU INFORMATION SCIENCE <br> HIGH SCHOOL WEB DESIGN AND DEVELOPMENT CLUB ALL RIGHTS RESERVED.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

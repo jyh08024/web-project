@@ -1,0 +1,47 @@
+공지 / 새소식 / 예역현황 / 후기
+
+
+공지
+1. 제목 :You declare global variables outside of any function 
+  내용 : in your program file. That’s
+what I do in the following line, which creates a global variable named glob
+initialized to 10.int glob = 10; // global variable
+
+2. You can hide a global variable like any other
+3. variable in a scope; you simply declare
+4. I send glob to cout next in hide_global() with the following
+5. that the global variable was only hidden and not
+
+
+새소식
+1. 제목 : Just as you can access a global variable 
+ 내용 : from anywhere in your program, you can
+alter one from anywhere in your program
+
+2. variable in a scope; you simply declare
+3 I send glob to cout next in hide_global() with the following
+4. that the global variable was only hidden and not
+5. You can hide a global variable like any other
+
+
+
+예약현황
+1. 제목 : Just because you can doesn’t mean you should. 
+   내용 :This is a good programming motto. Sometimes things are technically possible
+
+2 I send glob to cout next in hide_global() with the following
+3. that the global variable was only hidden and not
+4. You can hide a global variable like any other
+5. variable in a scope; you simply declare
+
+
+
+후기
+1. 제목 : How exactly can global constants make game programming code clearer? 
+   내용 : Well, suppose you’re writing an action game in which you want to limit the total
+number of enemies that can blast the poor player at once.
+
+2. that the global variable was only hidden and not
+3. You can hide a global variable like any other
+4. variable in a scope; you simply declare
+5 I send glob to cout next in hide_global() with the following
