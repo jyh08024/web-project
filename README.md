@@ -26,7 +26,7 @@
        주요기능 : 마우스 키패드, 스토어, 빵집별 리뷰
        
 ### [2021부산](https://github.com/jyh08024/web-project/tree/main/2021%EC%A0%84%EA%B5%AD%EB%8C%80%ED%9A%8C/%EB%B6%80%EC%82%B0) 
-       주요기능 : 빵집 월드컵(토너먼트), 월드컵 대진표, 실시간 예약
+       주요기능 : 빵집 월드컵(토너먼트), 토너먼트 대진표, 실시간 예약
 
 ### [2020강원](https://github.com/jyh08024/web-project/tree/main/2020%EC%A0%84%EA%B5%AD%EB%8C%80%ED%9A%8C/%EA%B0%95%EC%9B%90%EB%8F%84) 
        주요기능 : 스토어, 구매정보 저장, 판매량 차트 제작
